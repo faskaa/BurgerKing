@@ -1,0 +1,87 @@
+header {
+  @include container();
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 235, 220);
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .burgermenu {
+      text-decoration: none;
+      width: 24px;
+      height: 24px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .logo {
+      text-decoration: none;
+      width: 38px;
+      height: 38px;
+      img {
+        // position: absolute;
+        // left: 740px;
+        width: 38px;
+        height: 38px;
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      .account {
+        text-decoration: none;
+        width: 115px;
+        height: 34px;
+
+        button {
+          background-color: rgb(167, 27, 0);
+          border-radius: 9999px;
+          border: none;
+          width: 115px;
+          height: 34px;
+          color: white;
+          line-height: 1.5em;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: Flame-Regular;
+          // background-color: transparent;
+          // border: none;
+        }
+      }
+
+      .basket {
+        text-decoration: none;
+        width: 84.06px;
+        height: 34px;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-color: rgb(80, 35, 20);
+          border-radius: 9999px;
+          border: none;
+          color: white;
+          width: 84.06px;
+          height: 34px;
+          line-height: 1.5em;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: Flame-Regular;
+
+          img {
+            width: 15px;
+            height: 15px;
+            
+          }
+        }
+      }
+    }
+  }
+}
