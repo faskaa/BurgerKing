@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,66 +58,79 @@ table {
   src: url("../../Fonts/Flame-Regular.woff") format("woff");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Flame-RegularSans";
+  src: url("../../Fonts/Flame-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Flame Sans";
+  src: url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.eot");
+  src: url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.woff") format("woff"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.svg#Flame Sans") format("svg");
+}
 header {
   padding-right: 159.5px;
   padding-left: 159.5px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 104px;
   background-color: rgb(245, 235, 220);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1.41px;
 }
 header .navbar {
   width: 100%;
   display: flex;
+  flex-direction: column;
+}
+header .navbar .top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
 }
-header .navbar .burgermenu {
+header .navbar .top .burgermenu {
   text-decoration: none;
   width: 24px;
   height: 24px;
 }
-header .navbar .burgermenu img {
+header .navbar .top .burgermenu img {
   width: 24px;
   height: 24px;
 }
-header .navbar .logo {
+header .navbar .top .logo {
   text-decoration: none;
   width: 38px;
   height: 38px;
 }
-header .navbar .logo img {
+header .navbar .top .logo img {
   width: 38px;
   height: 38px;
 }
-header .navbar .buttons {
+header .navbar .top .buttons {
   display: flex;
   gap: 10px;
 }
-header .navbar .buttons .account {
+header .navbar .top .buttons .account {
   text-decoration: none;
   width: 115px;
   height: 34px;
 }
-header .navbar .buttons .account button {
+header .navbar .top .buttons .account button {
   background-color: rgb(167, 27, 0);
   border-radius: 9999px;
   border: none;
   width: 115px;
   height: 34px;
   color: white;
-  line-height: 1.5em;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: Flame-Regular;
+  font-size: 12px;
+  font-family: "Flame Sans";
 }
-header .navbar .buttons .basket {
+header .navbar .top .buttons .basket {
   text-decoration: none;
   width: 84.06px;
   height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header .navbar .buttons .basket button {
+header .navbar .top .buttons .basket button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,12 +141,38 @@ header .navbar .buttons .basket button {
   color: white;
   width: 84.06px;
   height: 34px;
-  line-height: 1.5em;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: Flame-Regular;
+  font-size: 12px;
+  font-family: "Flame Sans";
 }
-header .navbar .buttons .basket button img {
+header .navbar .top .buttons .basket button img {
   width: 15px;
   height: 15px;
+}
+header .navbar .bottom {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+header .navbar .bottom a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .navbar .bottom a img {
+  width: 20px;
+  height: 20px;
+}
+header .navbar .bottom a span:nth-child(2) {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 24px;
+  color: rgb(80, 35, 20);
+}
+header .navbar .bottom a span:nth-child(3) {
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  text-decoration: underline;
 }
