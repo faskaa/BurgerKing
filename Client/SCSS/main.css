@@ -838,3 +838,136 @@ body {
   opacity: 50%;
   transition: 0.3s;
 }
+
+.location-navbar {
+  background-color: rgb(214, 35, 0);
+  height: 40px;
+  display: flex;
+}
+.location-navbar .nav {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .location-navbar .nav {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .location-navbar .nav {
+    width: 375px;
+    margin: auto;
+  }
+}
+.location-navbar .nav span {
+  width: 1200px;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Flame Bold";
+  font-size: 24px;
+  color: rgb(245, 235, 220);
+}
+.location-navbar .nav a button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.location-navbar .nav a button:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+.location-navbar .nav a button img {
+  width: 24px;
+  height: 24px;
+}
+
+.selectors {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .selectors {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .selectors {
+    width: 375px;
+    margin: auto;
+  }
+}
+.selectors .selector {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.selectors .selector .top {
+  margin-top: 15px;
+  height: 48px;
+  display: flex;
+  width: 100%;
+}
+.selectors .selector .top .pick-up {
+  width: 100%;
+}
+.selectors .selector .top .pick-up button {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(80, 35, 20);
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(245, 235, 220);
+  border: none;
+}
+.selectors .selector .top .pick-up button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.selectors .selector .top .delivery {
+  width: 100%;
+}
+.selectors .selector .top .delivery button {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Flame Sans";
+  border: 2px solid rgb(198, 198, 145);
+  color: rgb(80, 35, 20);
+}
+.selectors .selector .top .delivery button:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.selectors .selector .bottom {
+  width: 100%;
+}
+.selectors .selector .bottom input {
+  width: 100%;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 48px;
+  border: 2px solid rgb(198, 198, 145);
+  padding-left: 10px;
+}
+.selectors .selector .bottom input:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.selectors .selector .bottom input::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.selectors .selector .bottom input::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
