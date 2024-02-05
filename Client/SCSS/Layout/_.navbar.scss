@@ -1,10 +1,11 @@
 header {
-  @include container();
   height: 104px;
   background-color: rgb(245, 235, 220);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1.41px;
+  z-index: 400;
   .navbar {
-    width: 100%;
+    
+    @include container();
     display: flex;
     flex-direction: column;
     .top {
@@ -56,6 +57,9 @@ header {
         }
 
         .basket {
+            @include for-size(mobile){
+                display: none;
+            }
           text-decoration: none;
           width: 84.06px;
           height: 34px;

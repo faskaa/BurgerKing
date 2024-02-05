@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans);
+@import url(https://db.onlinewebfonts.com/c/565a681be0eb6f1d92c6bc57c629ea35?family=Flame+Bold);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -67,17 +67,34 @@ table {
   src: url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.eot");
   src: url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.woff") format("woff"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/29eee6d957e73039264c9de9fd949d20.svg#Flame Sans") format("svg");
 }
+@font-face {
+  font-family: "Flame Bold";
+  src: url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.eot");
+  src: url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.woff") format("woff"), url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/565a681be0eb6f1d92c6bc57c629ea35.svg#Flame Bold") format("svg");
+}
 header {
-  padding-right: 159.5px;
-  padding-left: 159.5px;
   height: 104px;
   background-color: rgb(245, 235, 220);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1.41px;
+  z-index: 400;
 }
 header .navbar {
-  width: 100%;
+  width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  header .navbar {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .navbar {
+    width: 375px;
+    margin: auto;
+  }
 }
 header .navbar .top {
   display: flex;
@@ -130,6 +147,11 @@ header .navbar .top .buttons .basket {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  header .navbar .top .buttons .basket {
+    display: none;
+  }
+}
 header .navbar .top .buttons .basket button {
   display: flex;
   justify-content: center;
@@ -175,4 +197,341 @@ header .navbar .bottom a span:nth-child(3) {
   color: rgb(80, 35, 20);
   font-family: "Flame Sans";
   text-decoration: underline;
+}
+
+body {
+  background-color: rgb(245, 235, 220);
+}
+
+.order .main-section {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order .main-section {
+    width: 375px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.order .main-section .left {
+  width: 394px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left {
+    width: 294px;
+    height: 282px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order .main-section .left {
+    width: 100%;
+    height: 282px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order .main-section .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.order .main-section .left span {
+  font-size: 60px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Bold";
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .order .main-section .left span {
+    font-size: 30px;
+  }
+}
+.order .main-section .left .pickup {
+  cursor: pointer;
+  width: 300px;
+  height: 55px;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left .pickup {
+    width: 100%;
+    height: 45px;
+  }
+}
+.order .main-section .left .pickup button {
+  cursor: pointer;
+  background-color: rgb(214, 35, 0);
+  width: 300px;
+  height: 55px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left .pickup button {
+    width: 100%;
+    height: 45px;
+  }
+}
+.order .main-section .left .pickup button img {
+  width: 16px;
+  height: 16px;
+}
+.order .main-section .left .delivery {
+  width: 300px;
+  height: 55px;
+  border-radius: 9999px;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left .delivery {
+    width: 100%;
+    height: 45px;
+  }
+}
+.order .main-section .left .delivery button {
+  cursor: pointer;
+  border: 2px solid red;
+  background-color: transparent;
+  width: 300px;
+  height: 55px;
+  border-radius: 9999px;
+  font-size: 18px;
+  color: white;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(214, 35, 0);
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .left .delivery button {
+    width: 100%;
+    height: 45px;
+  }
+}
+.order .main-section .left .delivery button img {
+  width: 16px;
+  height: 16px;
+}
+.order .main-section .right {
+  z-index: -1;
+  width: 788.787px;
+  height: 382.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .order .main-section .right {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .right {
+    width: 500.787px;
+    height: 300.6px;
+  }
+}
+.order .main-section .right img {
+  width: 700.787px;
+  height: 382.6px;
+  background-size: contain;
+}
+@media screen and (max-width: 1200px) {
+  .order .main-section .right img {
+    width: 500.787px;
+    height: 300.6px;
+  }
+}
+
+.cards {
+  width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards {
+    width: 375px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.cards .card {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 2.22px;
+  width: 580px;
+  height: 515px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .cards .card {
+    width: 100%;
+    height: 315px;
+  }
+}
+.cards .card .top a img {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  width: 580px;
+  height: 290px;
+}
+@media screen and (max-width: 767px) {
+  .cards .card .top a img {
+    width: 100%;
+    height: 190px;
+  }
+}
+.cards .card .bottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 220px;
+}
+@media screen and (max-width: 767px) {
+  .cards .card .bottom {
+    padding: 10px;
+  }
+}
+.cards .card .bottom .info {
+  display: flex;
+  flex-direction: column;
+}
+.cards .card .bottom .info h4 {
+  line-height: 28px;
+  margin-bottom: 8px;
+  font-family: "Flame Bold";
+  font-size: 24px;
+  color: rgb(80, 35, 20);
+}
+@media screen and (max-width: 767px) {
+  .cards .card .bottom .info h4 {
+    line-height: 18px;
+    margin-bottom: 2px;
+    font-family: "Flame Bold";
+    font-size: 14px;
+  }
+}
+.cards .card .bottom .info span {
+  font-family: "Flame Sans";
+  font-size: 13px;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+@media screen and (max-width: 767px) {
+  .cards .card .bottom .info span {
+    font-family: "Flame Sans";
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+.cards .card .bottom .info a {
+  font-family: "Flame Sans";
+  font-size: 13px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-decoration-line: underline;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .cards .card .bottom .info a {
+    font-size: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-decoration-line: underline;
+    line-height: 10px;
+  }
+}
+.cards .card .bottom .button {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+.cards .card .bottom .button button {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: 2px solid red;
+  background-color: transparent;
+  border-radius: 9999px;
+  color: rgb(214, 35, 0);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Flame Sans";
+}
+@media screen and (max-width: 767px) {
+  .cards .card .bottom .button button {
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    background-color: transparent;
+    border-radius: 9999px;
+    color: rgb(214, 35, 0);
+    font-size: 6px;
+    font-weight: bold;
+  }
 }
