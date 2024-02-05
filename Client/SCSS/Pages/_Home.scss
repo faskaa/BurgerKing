@@ -411,3 +411,30 @@ body {
     }
   }
 }
+
+.terms {
+  .term {
+    background-color: rgb(80, 35, 20);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+    span {
+      @include container();
+      font-size: 12px;
+      font-family: "Flame Sans";
+      line-height: 24px;
+      color: rgb(245, 235, 220);
+
+      a {
+        color: rgb(245, 235, 220);
+        font-size: 12px;
+        text-decoration-line: underline;
+        font-family: "Flame Sans";
+        line-height: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}
