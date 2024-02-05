@@ -111,14 +111,23 @@ header .navbar .top .burgermenu img {
   width: 24px;
   height: 24px;
 }
+header .navbar .top .burgermenu img:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
 header .navbar .top .logo {
   text-decoration: none;
   width: 38px;
   height: 38px;
 }
 header .navbar .top .logo img {
+  left: 100px;
   width: 38px;
   height: 38px;
+}
+header .navbar .top .logo img:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 header .navbar .top .buttons {
   display: flex;
@@ -138,6 +147,10 @@ header .navbar .top .buttons .account button {
   color: white;
   font-size: 12px;
   font-family: "Flame Sans";
+}
+header .navbar .top .buttons .account button:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 header .navbar .top .buttons .basket {
   text-decoration: none;
@@ -165,6 +178,10 @@ header .navbar .top .buttons .basket button {
   height: 34px;
   font-size: 12px;
   font-family: "Flame Sans";
+}
+header .navbar .top .buttons .basket button:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 header .navbar .top .buttons .basket button img {
   width: 15px;
@@ -197,6 +214,79 @@ header .navbar .bottom a span:nth-child(3) {
   color: rgb(80, 35, 20);
   font-family: "Flame Sans";
   text-decoration: underline;
+}
+
+footer {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    width: 375px;
+    margin: auto;
+  }
+}
+footer .footer {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 1px;
+  padding: 20px;
+}
+footer .footer div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer div:nth-child(3) {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  footer .footer div:nth-child(3) {
+    display: flex;
+  }
+}
+footer .footer div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+footer .footer div a:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  footer .footer div a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer div a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+  }
+}
+footer .footer div a img {
+  width: 20px;
+  height: 20px;
+}
+footer .footer div a img:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+footer .footer div a span {
+  line-height: 20px;
+  font-size: 12px;
+  font-family: "Flame Sans";
 }
 
 body {
@@ -304,6 +394,10 @@ body {
   font-family: "Flame Sans";
   font-weight: bold;
 }
+.order .main-section .left .pickup button:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
 @media screen and (max-width: 1200px) {
   .order .main-section .left .pickup button {
     width: 100%;
@@ -337,6 +431,10 @@ body {
   font-family: "Flame Sans";
   font-weight: bold;
   color: rgb(214, 35, 0);
+}
+.order .main-section .left .delivery button:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
   .order .main-section .left .delivery button {
@@ -495,6 +593,10 @@ body {
   color: rgb(80, 35, 20);
   cursor: pointer;
 }
+.cards .card .bottom .info a:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
 @media screen and (max-width: 767px) {
   .cards .card .bottom .info a {
     font-size: 10px;
@@ -522,6 +624,12 @@ body {
   font-size: 12px;
   font-weight: bold;
   font-family: "Flame Sans";
+}
+.cards .card .bottom .button button:hover {
+  opacity: 50%;
+  transition: 0.3s;
+  background-color: rgb(255, 0, 0);
+  color: white;
 }
 @media screen and (max-width: 767px) {
   .cards .card .bottom .button button {
@@ -646,6 +754,10 @@ body {
   width: 200px;
   height: 70px;
 }
+.ads .ad .right .link .appstore img:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
 @media screen and (max-width: 1200px) {
   .ads .ad .right .link .appstore img {
     width: 150px;
@@ -656,6 +768,10 @@ body {
   width: 200px;
   height: 70px;
   border-radius: 10px;
+}
+.ads .ad .right .link .playstore img:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
   .ads .ad .right .link .playstore img {
@@ -717,4 +833,8 @@ body {
   font-family: "Flame Sans";
   line-height: 24px;
   cursor: pointer;
+}
+.terms .term span a:hover {
+  opacity: 50%;
+  transition: 0.3s;
 }

@@ -1,7 +1,8 @@
-@import "./Base/reset";
-@import "./Base/typography";
 // @import url(https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans);
 @import url(https://db.onlinewebfonts.com/c/565a681be0eb6f1d92c6bc57c629ea35?family=Flame+Bold);
+
+@import "./Base/reset";
+@import "./Base/typography";
 
 
 
@@ -11,7 +12,9 @@
 
 
 
-@import "./Layout/.navbar";
+@import "./Layout/navbar";
+@import "./Layout/footer";
+
 
 
 

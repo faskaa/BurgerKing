@@ -18,6 +18,10 @@ header {
         width: 24px;
         height: 24px;
         img {
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+          }
           width: 24px;
           height: 24px;
         }
@@ -30,8 +34,13 @@ header {
         img {
           // position: absolute;
           // left: 740px;
+          left: 100px;
           width: 38px;
           height: 38px;
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+          }
         }
       }
       .buttons {
@@ -53,6 +62,10 @@ header {
             font-family: "Flame Sans";
             // background-color: transparent;
             // border: none;
+            &:hover {
+              opacity: 50%;
+              transition: 0.3s;
+            }
           }
         }
 
@@ -79,6 +92,10 @@ header {
             height: 34px;
             font-size: 12px;
             font-family: "Flame Sans";
+            &:hover {
+              opacity: 50%;
+              transition: 0.3s;
+            }
 
             img {
               width: 15px;

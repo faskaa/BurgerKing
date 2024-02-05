@@ -64,6 +64,10 @@ body {
           height: 45px;
         }
         button {
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+          }
           cursor: pointer;
 
           background-color: rgb(214, 35, 0);
@@ -96,6 +100,10 @@ body {
           height: 45px;
         }
         button {
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+          }
           cursor: pointer;
           border: 2px solid red;
           background-color: transparent;
@@ -242,6 +250,10 @@ body {
           line-height: 20px;
           color: rgb(80, 35, 20);
           cursor: pointer;
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+          }
           @include for-size(mobile) {
             font-size: 10px;
             margin-top: 4px;
@@ -259,6 +271,12 @@ body {
         width: 100%;
         height: 100%;
         button {
+          &:hover {
+            opacity: 50%;
+            transition: 0.3s;
+            background-color: rgb(255, 0, 0);
+            color: white;
+          }
           cursor: pointer;
           width: 100px;
           height: 40px;
@@ -369,6 +387,10 @@ body {
 
         .appstore {
           img {
+            &:hover {
+              opacity: 50%;
+              transition: 0.3s;
+            }
             width: 200px;
             height: 70px;
             @include for-size(tablet) {
@@ -380,6 +402,10 @@ body {
 
         .playstore {
           img {
+            &:hover {
+              opacity: 50%;
+              transition: 0.3s;
+            }
             width: 200px;
             height: 70px;
             border-radius: 10px;
@@ -434,6 +460,10 @@ body {
         font-family: "Flame Sans";
         line-height: 24px;
         cursor: pointer;
+        &:hover {
+          opacity: 50%;
+          transition: 0.3s;
+        }
       }
     }
   }
