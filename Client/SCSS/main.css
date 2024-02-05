@@ -449,6 +449,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .cards .card .bottom {
+    height: 120px;
     padding: 10px;
   }
 }
@@ -533,5 +534,150 @@ body {
     color: rgb(214, 35, 0);
     font-size: 6px;
     font-weight: bold;
+  }
+}
+
+.ads {
+  background-color: rgba(0, 0, 0, 0.04);
+  height: 450px;
+  margin-top: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .ads {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ads {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 55px;
+  }
+}
+.ads .ad {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ads .ad {
+    width: 375px;
+    margin: auto;
+  }
+}
+.ads .ad .left {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ads .ad .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .left {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+  }
+}
+.ads .ad .left img {
+  position: relative;
+  top: -40px;
+  width: 300px;
+}
+.ads .ad .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ads .ad .right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.ads .ad .right h4 {
+  font-size: 48px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Bold";
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right h4 {
+    font-size: 35px;
+    color: rgb(80, 35, 20);
+    font-family: "Flame Bold";
+  }
+}
+@media screen and (max-width: 767px) {
+  .ads .ad .right h4 {
+    font-size: 20px;
+  }
+}
+.ads .ad .right .link {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right .link {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+.ads .ad .right .link .appstore img {
+  width: 200px;
+  height: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right .link .appstore img {
+    width: 150px;
+    height: 45px;
+  }
+}
+.ads .ad .right .link .playstore img {
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right .link .playstore img {
+    width: 150px;
+    height: 45px;
+  }
+}
+.ads .ad .right span {
+  font-family: "Flame Sans";
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(80, 35, 20);
+  text-align: left;
+}
+@media screen and (max-width: 1200px) {
+  .ads .ad .right span {
+    font-family: "Flame Sans";
+    margin-top: 22px;
+    font-size: 10px;
+    line-height: 20px;
+    color: rgb(80, 35, 20);
+    text-align: left;
   }
 }
