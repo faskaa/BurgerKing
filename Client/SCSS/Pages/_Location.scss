@@ -106,3 +106,90 @@
     }
   }
 }
+
+.locations {
+  @include container();
+  .top {
+    margin-top: 5px;
+    display: flex;
+    button {
+      width: 100%;
+      height: 48px;
+      background-color: transparent;
+      border: none;
+      font-family: "Flame Sans";
+      font-size: 16px;
+      line-height: 24px;
+      color: rgb(80, 35, 20);
+    }
+
+    button.active{
+
+      border-bottom: 5px solid rgb(214, 35, 0)
+    }
+  }
+
+  .bottom {
+    .location {
+      height: 100px;
+      border: 2px solid rgb(198, 198, 145);
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          margin-bottom: 4px;
+          font-size: 18px;
+          line-height: 20px;
+          font-family: "Flame Bold";
+          color: rgb(80, 35, 20);
+        }
+
+        .mid {
+          span {
+            font-size: 13px;
+            font-family: "Flame Sans";
+            line-height: 20px;
+            color: rgb(80, 35, 20);
+          }
+        }
+
+        .functionality {
+          font-size: 13px;
+          font-family: "Flame Sans";
+          line-height: 20px;
+          color: rgb(80, 35, 20);
+        }
+      }
+
+      .right {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        button{
+          background-color: transparent;
+          border: none;
+          img {
+            width: 24px;
+            height: 24px;
+            display: none;
+          }
+
+          img.active{
+
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+}

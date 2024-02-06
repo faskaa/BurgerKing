@@ -971,3 +971,89 @@ body {
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
+
+.locations {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .locations {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .locations {
+    width: 375px;
+    margin: auto;
+  }
+}
+.locations .top {
+  margin-top: 5px;
+  display: flex;
+}
+.locations .top button {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  font-family: "Flame Sans";
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(80, 35, 20);
+}
+.locations .top button.active {
+  border-bottom: 5px solid rgb(214, 35, 0);
+}
+.locations .bottom .location {
+  height: 100px;
+  border: 2px solid rgb(198, 198, 145);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+.locations .bottom .location .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.locations .bottom .location .left h1 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Flame Bold";
+  color: rgb(80, 35, 20);
+}
+.locations .bottom .location .left .mid span {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.locations .bottom .location .left .functionality {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.locations .bottom .location .right {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.locations .bottom .location .right button {
+  background-color: transparent;
+  border: none;
+}
+.locations .bottom .location .right button img {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.locations .bottom .location .right button img.active {
+  display: initial;
+}
