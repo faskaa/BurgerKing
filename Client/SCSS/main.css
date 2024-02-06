@@ -992,18 +992,24 @@ body {
   margin-top: 5px;
   display: flex;
 }
-.locations .top button {
+.locations .top a {
+  width: 100%;
+}
+.locations .top a button {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(80, 35, 20);
   width: 100%;
   height: 48px;
   background-color: transparent;
   border: none;
   font-family: "Flame Sans";
-  font-size: 16px;
-  line-height: 24px;
-  color: rgb(80, 35, 20);
 }
-.locations .top button.active {
-  border-bottom: 5px solid rgb(214, 35, 0);
+.locations .top a .nearby {
+  color: red;
+  border-bottom: 3px solid red;
+  font-weight: bold;
 }
 .locations .bottom .location {
   height: 100px;
@@ -1340,4 +1346,85 @@ body {
   font-size: 14px;
   font-family: "Flame Sans";
   color: rgb(0, 0, 0);
+}
+
+.menu-navbar {
+  width: 1200px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .menu-navbar {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-navbar {
+    width: 375px;
+    margin: auto;
+  }
+}
+.menu-navbar a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  text-decoration: none;
+}
+.menu-navbar a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+.menu-navbar a .navbar-menu {
+  color: rgb(214, 35, 0);
+  border-bottom: 3px solid rgb(214, 35, 0);
+}
+
+.section-menu {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .section-menu {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-menu {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-menu .cards .eat-card {
+  height: 244px;
+  display: flex;
+}
+.section-menu .cards .eat-card a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.section-menu .cards .eat-card a img {
+  height: 190px;
+}
+.section-menu .cards .eat-card a span {
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  font-weight: bold;
 }
