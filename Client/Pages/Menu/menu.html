@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../SCSS/main.css" />
     <link
       href="https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans"
       rel="stylesheet"
@@ -13,6 +12,7 @@
       href="https://db.onlinewebfonts.com/c/565a681be0eb6f1d92c6bc57c629ea35?family=Flame+Bold"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../../SCSS/main.css" />
   </head>
   <body>
     <header>
@@ -21,14 +21,14 @@
           <a class="burgermenu" href="">
             <img src="./../../Assets/Icons/burger-bar.png" alt="" />
           </a>
-          <a class="logo" href="../Home/home.html">
+          <a class="logo" href="./home.html">
             <img src="./../../Assets/Icons/burger-king.png" alt="" />
           </a>
           <div class="buttons">
-            <a class="account" href="../Sign-Up/signup.html">
+            <a class="account" href="../Sign-Up/signup.html ">
               <button>Sign Up/Sing In</button>
             </a>
-            <a class="basket" href="../Sign-Up/">
+            <a class="basket" href="../Sign-Up/signup.html">
               <button>
                 <img src="./../../Assets/Icons/basket.png" alt="" />
                 $0.00
@@ -45,25 +45,11 @@
         </div>
       </div>
     </header>
-    <section class="section-delivery">
-      <span class="address">Enter Your Address</span>
-      <input placeholder="Delivery Address" type="text" />
-      <span class="checkout">Unit can be entered during checkout</span>
-      <span class="terms"
-        >Delivery Terms and Fees Apply. Click
-        <a href="">Here</a>
-        For Details
-      </span>
-      <button>Delivery Here</button>
-    </section>
-    <section class="menu">
-        <div class="featured"></div>
-        <div class="family"></div>
-        <div class="flame-grill-burgers"></div>
-        <div class="chicken-fish"></div>
-        <div class="sides"></div>
-        <div class="drinks-coffee"></div>
-        <div class="condiments"></div>
-    </section>
+    <div class="menu-navbar">
+      <div class="navbar-menu">Full Menu</div>
+      <div class="navbar-recents">Recents</div>
+      <div class="navbar-favorites">Favorites</div>
+    </div>
+    <section class="section-menu"></section>
   </body>
 </html>

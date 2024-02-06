@@ -1,0 +1,71 @@
+.section-delivery {
+  @include container();
+  height: 400px;
+  display: flex; //for menu
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .address {
+    margin-bottom: 4px;
+    font-size: 38px;
+    line-height: 20px;
+    font-family: "Flame Bold";
+    color: rgb(80, 35, 20);
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    cursor: auto;
+    background-color: rgb(255, 255, 255);
+    height: 48px;
+    border: 2px solid rgb(198, 198, 145);
+    &:hover {
+      border: 2px solid rgb(136, 136, 99);
+      transition: 0.3s;
+    }
+    padding-left: 10px;
+
+    &::placeholder {
+      font-size: 14px;
+      font-family: "Flame Sans";
+      color: rgb(80, 35, 20);
+    }
+  }
+
+  .checkout {
+    font-family: "Flame Sans";
+    font-size: 15px;
+    color: red;
+  }
+
+  .terms {
+    font-size: 14px;
+    font-family: "Flame Sans";
+    color: rgb(80, 35, 20);
+
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+
+  button {
+    &:hover {
+      opacity: 50%;
+      transition: 0.3s;
+    }
+    cursor: pointer;
+
+    background-color: rgb(214, 35, 0);
+    width: 300px;
+    height: 55px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-family: "Flame Sans";
+    font-weight: bold;
+  }
+}

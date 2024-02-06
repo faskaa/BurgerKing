@@ -1057,3 +1057,287 @@ body {
 .locations .bottom .location .right button img.active {
   display: initial;
 }
+
+.section-delivery {
+  width: 1200px;
+  margin: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .section-delivery {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-delivery {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-delivery .address {
+  margin-bottom: 4px;
+  font-size: 38px;
+  line-height: 20px;
+  font-family: "Flame Bold";
+  color: rgb(80, 35, 20);
+}
+.section-delivery input {
+  width: 100%;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 48px;
+  border: 2px solid rgb(198, 198, 145);
+  padding-left: 10px;
+}
+.section-delivery input:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-delivery input::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-delivery input::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-delivery .checkout {
+  font-family: "Flame Sans";
+  font-size: 15px;
+  color: red;
+}
+.section-delivery .terms {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-delivery .terms a {
+  color: red;
+  text-decoration: none;
+}
+.section-delivery button {
+  cursor: pointer;
+  background-color: rgb(214, 35, 0);
+  width: 300px;
+  height: 55px;
+  border-radius: 9999px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.section-delivery button:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+.sign-up {
+  height: 50px;
+}
+.sign-up div {
+  width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .sign-up div {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sign-up div {
+    width: 375px;
+    margin: auto;
+  }
+}
+.sign-up div a button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sign-up div a button img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-signup {
+  width: 1200px;
+  margin: auto;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .section-signup {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-signup {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-signup .container {
+  background-color: white;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section-signup .container h2 {
+  font-family: "Flame Bold";
+  font-size: 70px;
+  color: rgb(80, 35, 20);
+  margin-bottom: 20px;
+}
+.section-signup .container .signup-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.section-signup .container .signup-form .email {
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signup .container .signup-form .email:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signup .container .signup-form .email::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .email::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .username {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signup .container .signup-form .username:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signup .container .signup-form .username::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .username::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .password {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signup .container .signup-form .password:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signup .container .signup-form .password::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .password::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .repassword {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signup .container .signup-form .repassword:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signup .container .signup-form .repassword::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .repassword::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-form .signup-btn {
+  background-color: transparent;
+  height: 48px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: rgb(245, 235, 220);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: none;
+  font-size: 15px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  margin-bottom: 20px;
+}
+.section-signup .container .signup-form .signup-btn:hover {
+  border: 1px solid rgb(136, 136, 99);
+  transition: 0.5s;
+}
+.section-signup .container .signup-link {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signup .container .signup-link a {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(0, 0, 0);
+}
