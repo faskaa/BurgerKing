@@ -106,7 +106,7 @@
   }
 }
 
-.selectors {
+.delivery-selectors {
   @include container();
   .selector {
     display: flex;
@@ -120,22 +120,27 @@
       .pick-up {
         width: 100%;
         button {
+          background-color: rgb(80, 35, 20);
           height: 100%;
           width: 100%;
-          background-color: rgb(255, 255, 255);
-          color: rgb(80, 35, 20);
+          // background-color: rgb(255, 255, 255);
+          // color: rgb(80, 35, 20);
           font-weight: bold;
           font-size: 14px;
           font-family: "Flame Sans";
           border: none;
+          background-color: rgb(255, 255, 255);
+          height: 100%;
+          width: 100%;
+          font-size: 14px;
+          font-family: "Flame Sans";
           border: 2px solid rgb(198, 198, 145);
-
+          color: rgb(80, 35, 20);
 
           &:hover {
             border: 2px solid rgb(136, 136, 99);
             transition: 0.3s;
           }
-          
         }
       }
 
@@ -143,12 +148,12 @@
         width: 100%;
 
         button {
-          background-color: rgb(80, 35, 20);
-
+          
           height: 100%;
           width: 100%;
           font-size: 14px;
           font-family: "Flame Sans";
+          background-color: rgb(80, 35, 20);
           color: rgb(245, 235, 220);
 
           &:hover {
@@ -184,7 +189,7 @@
   }
 }
 
-.locations {
+.delivery-locations {
   @include container();
   .top {
     margin-top: 5px;
@@ -279,13 +284,11 @@
             background-color: transparent;
             border: none;
             img {
-              
               width: 24px;
               height: 24px;
               display: none;
             }
 
-            
             img.active {
               transition: 1s;
               display: initial;
@@ -316,7 +319,7 @@
             text-decoration: none;
             font-weight: bold;
 
-            button{
+            button {
               border: none;
               height: 50px;
               width: 50px;
@@ -326,12 +329,11 @@
               align-items: center;
               justify-content: center;
 
-              img{
+              img {
                 width: 24px;
               }
-
             }
-            span{
+            span {
               font-family: "Flame Sans";
               line-height: 20px;
               color: rgb(80, 35, 20);
@@ -342,4 +344,3 @@
     }
   }
 }
-

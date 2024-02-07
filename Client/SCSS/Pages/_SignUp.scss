@@ -1,6 +1,6 @@
 .sign-up {
   height: 50px;
-
+  
   div {
     @include container();
     padding: 15px;
@@ -20,15 +20,25 @@
 }
 
 .section-signup {
-  @include container();
   height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
 
+
   .container {
+    @include container();
     background-color: white;
-    width: 50%;
+    width: 500px;
+    @include for-size(tablet){
+      width: 500px;
+
+    }
+
+    @include for-size(mobile){
+      width: 375px;
+
+    }
     height: 500px;
     display: flex;
     // gap: 70px;
@@ -43,6 +53,13 @@
       font-size: 70px;
       color: rgb(80, 35, 20);
       margin-bottom: 20px;
+      @include for-size(mobile){
+        font-family: "Flame Bold";
+      font-size: 50px;
+      color: rgb(80, 35, 20);
+      margin-bottom: 20px;
+  
+      }
     }
 
     .signup-form {

@@ -904,53 +904,53 @@ body {
   height: 24px;
 }
 
-.selectors {
+.location-selectors {
   width: 1200px;
   margin: auto;
 }
 @media screen and (max-width: 1200px) {
-  .selectors {
+  .location-selectors {
     width: 767px;
     margin: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .selectors {
+  .location-selectors {
     width: 375px;
     margin: auto;
   }
 }
-.selectors .selector {
+.location-selectors .selector {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.selectors .selector .top {
+.location-selectors .selector .top {
   margin-top: 15px;
   height: 48px;
   display: flex;
   width: 100%;
 }
-.selectors .selector .top .pick-up {
+.location-selectors .selector .top .pick-up {
   width: 100%;
 }
-.selectors .selector .top .pick-up button {
+.location-selectors .selector .top .pick-up button {
   height: 100%;
   width: 100%;
   background-color: rgb(80, 35, 20);
+  color: rgb(245, 235, 220);
   font-size: 14px;
   font-family: "Flame Sans";
-  color: rgb(245, 235, 220);
   border: none;
 }
-.selectors .selector .top .pick-up button:hover {
+.location-selectors .selector .top .pick-up button:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
-.selectors .selector .top .delivery {
+.location-selectors .selector .top .delivery {
   width: 100%;
 }
-.selectors .selector .top .delivery button {
+.location-selectors .selector .top .delivery button {
   background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
@@ -959,14 +959,14 @@ body {
   border: 2px solid rgb(198, 198, 145);
   color: rgb(80, 35, 20);
 }
-.selectors .selector .top .delivery button:hover {
+.location-selectors .selector .top .delivery button:hover {
   border: 2px solid rgb(136, 136, 99);
   transition: 0.3s;
 }
-.selectors .selector .bottom {
+.location-selectors .selector .bottom {
   width: 100%;
 }
-.selectors .selector .bottom input {
+.location-selectors .selector .bottom input {
   width: 100%;
   outline: none;
   cursor: auto;
@@ -975,45 +975,45 @@ body {
   border: 2px solid rgb(198, 198, 145);
   padding-left: 10px;
 }
-.selectors .selector .bottom input:hover {
+.location-selectors .selector .bottom input:hover {
   border: 2px solid rgb(136, 136, 99);
   transition: 0.3s;
 }
-.selectors .selector .bottom input::-moz-placeholder {
+.location-selectors .selector .bottom input::-moz-placeholder {
   font-size: 14px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-.selectors .selector .bottom input::placeholder {
+.location-selectors .selector .bottom input::placeholder {
   font-size: 14px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
 
-.locations {
+.location-locations {
   width: 1200px;
   margin: auto;
 }
 @media screen and (max-width: 1200px) {
-  .locations {
+  .location-locations {
     width: 767px;
     margin: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .locations {
+  .location-locations {
     width: 375px;
     margin: auto;
   }
 }
-.locations .top {
+.location-locations .top {
   margin-top: 5px;
   display: flex;
 }
-.locations .top a {
+.location-locations .top a {
   width: 100%;
 }
-.locations .top a button {
+.location-locations .top a button {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -1024,15 +1024,15 @@ body {
   border: none;
   font-family: "Flame Sans";
 }
-.locations .top a .nearby {
+.location-locations .top a .nearby {
   color: red;
   border-bottom: 3px solid red;
   font-weight: bold;
 }
-.locations .bottom .location.active .location-bottom {
+.location-locations .bottom .location.active .location-bottom {
   display: initial;
 }
-.locations .bottom .location {
+.location-locations .bottom .location {
   height: 100%;
   border: 2px solid rgb(198, 198, 145);
   padding-right: 12px;
@@ -1044,7 +1044,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.locations .bottom .location .location-top {
+.location-locations .bottom .location .location-top {
   padding-right: 12px;
   padding-left: 12px;
   padding-top: 8px;
@@ -1053,61 +1053,61 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.locations .bottom .location .location-top .left {
+.location-locations .bottom .location .location-top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.locations .bottom .location .location-top .left h1 {
+.location-locations .bottom .location .location-top .left h1 {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 20px;
   font-family: "Flame Bold";
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .left .mid span {
+.location-locations .bottom .location .location-top .left .mid span {
   font-size: 13px;
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .left .functionality {
+.location-locations .bottom .location .location-top .left .functionality {
   font-size: 13px;
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .right {
+.location-locations .bottom .location .location-top .right {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
-.locations .bottom .location .location-top .right button {
+.location-locations .bottom .location .location-top .right button {
   height: 24px;
   background-color: transparent;
   border: none;
 }
-.locations .bottom .location .location-top .right button img {
+.location-locations .bottom .location .location-top .right button img {
   width: 24px;
   height: 24px;
   display: none;
 }
-.locations .bottom .location .location-top .right button img.active {
+.location-locations .bottom .location .location-top .right button img.active {
   transition: 1s;
   display: initial;
 }
-.locations .bottom .location .location-bottom {
+.location-locations .bottom .location .location-bottom {
   display: none;
 }
-.locations .bottom .location .location-bottom .order-menu {
+.location-locations .bottom .location .location-bottom .order-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 50px;
 }
-.locations .bottom .location .location-bottom .order-menu a {
+.location-locations .bottom .location .location-bottom .order-menu a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1120,7 +1120,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.locations .bottom .location .location-bottom .order-menu a button {
+.location-locations .bottom .location .location-bottom .order-menu a button {
   border: none;
   height: 50px;
   width: 50px;
@@ -1130,10 +1130,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.locations .bottom .location .location-bottom .order-menu a button img {
+.location-locations .bottom .location .location-bottom .order-menu a button img {
   width: 24px;
 }
-.locations .bottom .location .location-bottom .order-menu a span {
+.location-locations .bottom .location .location-bottom .order-menu a span {
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
@@ -1186,70 +1186,75 @@ body {
   height: 24px;
 }
 
-.selectors {
+.delivery-selectors {
   width: 1200px;
   margin: auto;
 }
 @media screen and (max-width: 1200px) {
-  .selectors {
+  .delivery-selectors {
     width: 767px;
     margin: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .selectors {
+  .delivery-selectors {
     width: 375px;
     margin: auto;
   }
 }
-.selectors .selector {
+.delivery-selectors .selector {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.selectors .selector .top {
+.delivery-selectors .selector .top {
   margin-top: 15px;
   height: 48px;
   display: flex;
   width: 100%;
 }
-.selectors .selector .top .pick-up {
+.delivery-selectors .selector .top .pick-up {
   width: 100%;
 }
-.selectors .selector .top .pick-up button {
+.delivery-selectors .selector .top .pick-up button {
+  background-color: rgb(80, 35, 20);
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(80, 35, 20);
   font-weight: bold;
   font-size: 14px;
   font-family: "Flame Sans";
   border: none;
-  border: 2px solid rgb(198, 198, 145);
-}
-.selectors .selector .top .pick-up button:hover {
-  border: 2px solid rgb(136, 136, 99);
-  transition: 0.3s;
-}
-.selectors .selector .top .delivery {
-  width: 100%;
-}
-.selectors .selector .top .delivery button {
-  background-color: rgb(80, 35, 20);
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
   font-size: 14px;
   font-family: "Flame Sans";
+  border: 2px solid rgb(198, 198, 145);
+  color: rgb(80, 35, 20);
+}
+.delivery-selectors .selector .top .pick-up button:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.delivery-selectors .selector .top .delivery {
+  width: 100%;
+}
+.delivery-selectors .selector .top .delivery button {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Flame Sans";
+  background-color: rgb(80, 35, 20);
   color: rgb(245, 235, 220);
 }
-.selectors .selector .top .delivery button:hover {
+.delivery-selectors .selector .top .delivery button:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
-.selectors .selector .bottom {
+.delivery-selectors .selector .bottom {
   width: 100%;
 }
-.selectors .selector .bottom input {
+.delivery-selectors .selector .bottom input {
   width: 100%;
   outline: none;
   cursor: auto;
@@ -1258,45 +1263,45 @@ body {
   border: 2px solid rgb(198, 198, 145);
   padding-left: 10px;
 }
-.selectors .selector .bottom input:hover {
+.delivery-selectors .selector .bottom input:hover {
   border: 2px solid rgb(136, 136, 99);
   transition: 0.3s;
 }
-.selectors .selector .bottom input::-moz-placeholder {
+.delivery-selectors .selector .bottom input::-moz-placeholder {
   font-size: 14px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-.selectors .selector .bottom input::placeholder {
+.delivery-selectors .selector .bottom input::placeholder {
   font-size: 14px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
 
-.locations {
+.delivery-locations {
   width: 1200px;
   margin: auto;
 }
 @media screen and (max-width: 1200px) {
-  .locations {
+  .delivery-locations {
     width: 767px;
     margin: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  .locations {
+  .delivery-locations {
     width: 375px;
     margin: auto;
   }
 }
-.locations .top {
+.delivery-locations .top {
   margin-top: 5px;
   display: flex;
 }
-.locations .top a {
+.delivery-locations .top a {
   width: 100%;
 }
-.locations .top a button {
+.delivery-locations .top a button {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -1307,15 +1312,15 @@ body {
   border: none;
   font-family: "Flame Sans";
 }
-.locations .top a .nearby {
+.delivery-locations .top a .nearby {
   color: red;
   border-bottom: 3px solid red;
   font-weight: bold;
 }
-.locations .bottom .location.active .location-bottom {
+.delivery-locations .bottom .location.active .location-bottom {
   display: initial;
 }
-.locations .bottom .location {
+.delivery-locations .bottom .location {
   height: 100%;
   border: 2px solid rgb(198, 198, 145);
   padding-right: 12px;
@@ -1327,7 +1332,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-.locations .bottom .location .location-top {
+.delivery-locations .bottom .location .location-top {
   padding-right: 12px;
   padding-left: 12px;
   padding-top: 8px;
@@ -1336,61 +1341,61 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.locations .bottom .location .location-top .left {
+.delivery-locations .bottom .location .location-top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.locations .bottom .location .location-top .left h1 {
+.delivery-locations .bottom .location .location-top .left h1 {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 20px;
   font-family: "Flame Bold";
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .left .mid span {
+.delivery-locations .bottom .location .location-top .left .mid span {
   font-size: 13px;
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .left .functionality {
+.delivery-locations .bottom .location .location-top .left .functionality {
   font-size: 13px;
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
-.locations .bottom .location .location-top .right {
+.delivery-locations .bottom .location .location-top .right {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
-.locations .bottom .location .location-top .right button {
+.delivery-locations .bottom .location .location-top .right button {
   height: 24px;
   background-color: transparent;
   border: none;
 }
-.locations .bottom .location .location-top .right button img {
+.delivery-locations .bottom .location .location-top .right button img {
   width: 24px;
   height: 24px;
   display: none;
 }
-.locations .bottom .location .location-top .right button img.active {
+.delivery-locations .bottom .location .location-top .right button img.active {
   transition: 1s;
   display: initial;
 }
-.locations .bottom .location .location-bottom {
+.delivery-locations .bottom .location .location-bottom {
   display: none;
 }
-.locations .bottom .location .location-bottom .order-menu {
+.delivery-locations .bottom .location .location-bottom .order-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 50px;
 }
-.locations .bottom .location .location-bottom .order-menu a {
+.delivery-locations .bottom .location .location-bottom .order-menu a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1403,7 +1408,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.locations .bottom .location .location-bottom .order-menu a button {
+.delivery-locations .bottom .location .location-bottom .order-menu a button {
   border: none;
   height: 50px;
   width: 50px;
@@ -1413,10 +1418,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.locations .bottom .location .location-bottom .order-menu a button img {
+.delivery-locations .bottom .location .location-bottom .order-menu a button img {
   width: 24px;
 }
-.locations .bottom .location .location-bottom .order-menu a span {
+.delivery-locations .bottom .location .location-bottom .order-menu a span {
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
@@ -1453,28 +1458,16 @@ body {
 }
 
 .section-signup {
-  width: 1200px;
-  margin: auto;
   height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1200px) {
-  .section-signup {
-    width: 767px;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section-signup {
-    width: 375px;
-    margin: auto;
-  }
-}
 .section-signup .container {
+  width: 1200px;
+  margin: auto;
   background-color: white;
-  width: 50%;
+  width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -1483,11 +1476,41 @@ body {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+@media screen and (max-width: 1200px) {
+  .section-signup .container {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-signup .container {
+    width: 375px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-signup .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-signup .container {
+    width: 375px;
+  }
+}
 .section-signup .container h2 {
   font-family: "Flame Bold";
   font-size: 70px;
   color: rgb(80, 35, 20);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .section-signup .container h2 {
+    font-family: "Flame Bold";
+    font-size: 50px;
+    color: rgb(80, 35, 20);
+    margin-bottom: 20px;
+  }
 }
 .section-signup .container .signup-form {
   display: flex;
@@ -1623,6 +1646,175 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.sign-in {
+  height: 50px;
+}
+.sign-in div {
+  width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .sign-in div {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sign-in div {
+    width: 375px;
+    margin: auto;
+  }
+}
+.sign-in div a button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sign-in div a button img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-signin {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-signin .container {
+  width: 1200px;
+  margin: auto;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media screen and (max-width: 1200px) {
+  .section-signin .container {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-signin .container {
+    width: 375px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-signin .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-signin .container {
+    width: 375px;
+  }
+}
+.section-signin .container h2 {
+  font-family: "Flame Bold";
+  font-size: 70px;
+  color: rgb(80, 35, 20);
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .section-signin .container h2 {
+    font-family: "Flame Bold";
+    font-size: 50px;
+    color: rgb(80, 35, 20);
+    margin-bottom: 20px;
+  }
+}
+.section-signin .container .signin-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+.section-signin .container .signin-form .username {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signin .container .signin-form .username:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signin .container .signin-form .username::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signin .container .signin-form .username::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signin .container .signin-form .password {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  border: 2px solid rgb(245, 235, 220);
+  border-radius: 12px;
+  padding-left: 10px;
+}
+.section-signin .container .signin-form .password:hover {
+  border: 2px solid rgb(136, 136, 99);
+  transition: 0.3s;
+}
+.section-signin .container .signin-form .password::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signin .container .signin-form .password::placeholder {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signin .container .signin-form .signin-btn {
+  background-color: transparent;
+  height: 48px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: rgb(245, 235, 220);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: none;
+  font-size: 15px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  margin-bottom: 20px;
+}
+.section-signin .container .signin-form .signin-btn:hover {
+  border: 1px solid rgb(136, 136, 99);
+  transition: 0.5s;
+}
+.section-signin .container .signin-link {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-signin .container .signin-link a {
+  font-size: 14px;
+  font-family: "Flame Sans";
+  color: rgb(0, 0, 0);
+}
+
 .menu-navbar {
   width: 1200px;
   margin: auto;
@@ -1702,4 +1894,65 @@ body {
   color: rgb(80, 35, 20);
   font-family: "Flame Sans";
   font-weight: bold;
+}
+
+.submenu-eat-cards {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .submenu-eat-cards {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .submenu-eat-cards {
+    width: 375px;
+    margin: auto;
+  }
+}
+.submenu-eat-cards .eat-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.submenu-eat-cards .eat-cards .eat-card {
+  margin-bottom: 50px;
+  width: 300px;
+}
+.submenu-eat-cards .eat-cards .eat-card a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.submenu-eat-cards .eat-cards .eat-card a img {
+  width: 200px;
+}
+.submenu-eat-cards .eat-cards .eat-card a span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.submenu-eat-cards .eat-cards .eat-card a div {
+  margin-top: 5px;
+  display: flex;
+  gap: 15px;
+}
+.submenu-eat-cards .eat-cards .eat-card a div span {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.submenu-eat-cards .eat-cards .eat-card a div p {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
 }
