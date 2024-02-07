@@ -112,9 +112,9 @@
   .top {
     margin-top: 5px;
     display: flex;
-    a{
+    a {
       width: 100%;
-      
+
       button {
         cursor: pointer;
         font-size: 16px;
@@ -126,20 +126,24 @@
         border: none;
         font-family: "Flame Sans";
       }
-        .nearby{
-          color: red;
-          border-bottom: 3px solid red;
-          font-weight: bold;
-        }
-      
+      .nearby {
+        color: red;
+        border-bottom: 3px solid red;
+        font-weight: bold;
+      }
     }
-
-  
   }
 
   .bottom {
+    .location.active {
+      // for js
+
+      .location-bottom {
+        display: initial;
+      }
+    }
     .location {
-      height: 100px;
+      height: 100%;
       border: 2px solid rgb(198, 198, 145);
       padding-right: 12px;
       padding-left: 12px;
@@ -147,23 +151,40 @@
       padding-bottom: 8px;
       background-color: rgb(255, 255, 255);
       display: flex;
-      justify-content: space-between;
-
-      .left {
+      flex-direction: column;
+      gap: 10px;
+      .location-top {
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
 
-        h1 {
-          margin-bottom: 4px;
-          font-size: 18px;
-          line-height: 20px;
-          font-family: "Flame Bold";
-          color: rgb(80, 35, 20);
-        }
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
-        .mid {
-          span {
+          h1 {
+            margin-bottom: 4px;
+            font-size: 18px;
+            line-height: 20px;
+            font-family: "Flame Bold";
+            color: rgb(80, 35, 20);
+          }
+
+          .mid {
+            span {
+              font-size: 13px;
+              font-family: "Flame Sans";
+              line-height: 20px;
+              color: rgb(80, 35, 20);
+            }
+          }
+
+          .functionality {
             font-size: 13px;
             font-family: "Flame Sans";
             line-height: 20px;
@@ -171,30 +192,73 @@
           }
         }
 
-        .functionality {
-          font-size: 13px;
-          font-family: "Flame Sans";
-          line-height: 20px;
-          color: rgb(80, 35, 20);
+        .right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+          button {
+            height: 24px;
+            background-color: transparent;
+            border: none;
+            img {
+              
+              width: 24px;
+              height: 24px;
+              display: none;
+            }
+
+            
+            img.active {
+              transition: 1s;
+              display: initial;
+            }
+          }
         }
       }
 
-      .right {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        button{
-          background-color: transparent;
-          border: none;
-          img {
-            width: 24px;
-            height: 24px;
-            display: none;
-          }
+      .location-bottom {
+        display: none;
+        .order-menu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 50px;
 
-          img.active{
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 60px;
+            font-family: "Flame Sans";
+            line-height: 20px;
+            color: rgb(80, 35, 20);
+            text-decoration: none;
+            font-weight: bold;
 
-            display: initial;
+            button{
+              border: none;
+              height: 50px;
+              width: 50px;
+              background-color: red;
+              border-radius: 9999px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img{
+                width: 24px;
+              }
+
+            }
+            span{
+              font-family: "Flame Sans";
+              line-height: 20px;
+              color: rgb(80, 35, 20);
+            }
           }
         }
       }
