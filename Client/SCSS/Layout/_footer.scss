@@ -1,8 +1,21 @@
 footer {
-  @include container();
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(245, 235, 220);
+  z-index: 1000; // Set a higher z-index to ensure it stays on top of other elements
+  transition: bottom 0.3s ease-in-out; // Smooth transition effect
+
+ 
+}
+
+footer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 1px;
+
   .footer {
+    
+    @include container();
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 1px;
     padding: 20px;
 
     div {

@@ -1,4 +1,16 @@
 header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff; // You can customize the background color
+  z-index: 1000; // Set a higher z-index to ensure it stays on top of other elements
+  transition: top 0.3s ease-in-out; // Smooth transition effect
+
+
+}
+
+
+header {
   height: 104px;
   background-color: rgb(245, 235, 220);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1.41px;
