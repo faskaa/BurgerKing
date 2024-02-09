@@ -226,7 +226,7 @@ header .navbar .bottom a span:nth-child(3) {
 }
 
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: rgb(245, 235, 220);
@@ -1955,4 +1955,400 @@ body {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
+}
+
+.section-detail-bg {
+  height: 290px;
+  background-color: rgb(80, 35, 20);
+}
+
+.section-detail-info {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .section-detail-info {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-detail-info {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-detail-info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section-detail-info div img {
+  position: absolute;
+  top: -280px;
+  width: 370px;
+}
+.section-detail-info div .detail-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 20px;
+}
+.section-detail-info div .detail-info h4 {
+  color: rgb(80, 35, 20);
+  font-size: 30px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.section-detail-info div .detail-info div {
+  display: flex;
+  gap: 10px;
+}
+.section-detail-info div .detail-info div span {
+  text-transform: lowercase;
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.section-detail-info div .detail-info div p {
+  text-transform: lowercase;
+  font-size: 18px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+
+.section-detail-order {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+}
+@media screen and (max-width: 1200px) {
+  .section-detail-order {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-detail-order {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-detail-order div .detail-sizes .top {
+  padding: 20px;
+}
+.section-detail-order div .detail-sizes .top span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.section-detail-order div .detail-sizes .middle .size {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-detail-order div .detail-sizes .middle .size .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-detail-order div .detail-sizes .middle .size .left img {
+  width: 60px;
+  height: 60px;
+}
+.section-detail-order div .detail-sizes .middle .size .left .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+.section-detail-order div .detail-sizes .middle .size .left .info span {
+  font-size: 16px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+.section-detail-order div .detail-sizes .middle .size .left .info p {
+  font-size: 13px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+.section-detail-order div .detail-sizes .middle .size .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-detail-order div .detail-sizes .middle .size .right button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.section-detail-order div .detail-sizes .middle .size .right button.clicked {
+  color: #fff;
+  background-color: rgb(245, 235, 220);
+  box-shadow: none;
+}
+
+.section-selected-detail-order {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .section-selected-detail-order {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-selected-detail-order {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-selected-detail-order div .detail-order .top {
+  padding: 20px;
+}
+.section-selected-detail-order div .detail-order .top span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.section-selected-detail-order div .detail-order .middle .order {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-selected-detail-order div .detail-order .middle .order .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-selected-detail-order div .detail-order .middle .order .left img {
+  width: 60px;
+  height: 60px;
+}
+.section-selected-detail-order div .detail-order .middle .order .left .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+.section-selected-detail-order div .detail-order .middle .order .left .info span {
+  font-size: 16px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.section-selected-detail-order div .detail-order .middle .order .left .info p {
+  font-size: 13px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+
+.section-detail-add-order {
+  margin-top: 10px;
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .section-detail-add-order {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-detail-add-order {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-detail-add-order .text span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.section-detail-add-order .add-order {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.section-detail-add-order .add-order div.active {
+  display: none;
+}
+.section-detail-add-order .add-order .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  padding: 10px;
+  height: 100px;
+}
+.section-detail-add-order .add-order .order .order-left {
+  display: flex;
+  align-items: center;
+}
+.section-detail-add-order .add-order .order .order-left .left img {
+  width: 60px;
+  height: 60px;
+}
+.section-detail-add-order .add-order .order .order-left .right {
+  display: flex;
+  flex-direction: column;
+}
+.section-detail-add-order .add-order .order .order-left .right h4 {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.section-detail-add-order .add-order .order .order-left .right div {
+  display: flex;
+  gap: 10px;
+}
+.section-detail-add-order .add-order .order .order-left .right div span {
+  font-size: 13px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  margin-top: 5px;
+}
+.section-detail-add-order .add-order .order .order-right button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.section-detail-add-order .add-order .order .order-right button:hover {
+  opacity: 50%;
+  transition: 0.2s;
+}
+.section-detail-add-order .add-order .order .order-right button img {
+  width: 14px;
+  height: 14px;
+}
+
+.section-detail-nutritional {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .section-detail-nutritional {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-detail-nutritional {
+    width: 375px;
+    margin: auto;
+  }
+}
+.section-detail-nutritional .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-detail-nutritional .top span {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.section-detail-nutritional .top a img {
+  width: 15px;
+  height: 15px;
+}
+.section-detail-nutritional .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section-detail-nutritional .bottom span {
+  font-size: 14px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+.section-detail-nutritional .bottom span:nth-child(1) {
+  font-size: 18px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.section-detail-nutritional .bottom span:nth-child(2) {
+  margin-top: 10px;
+}
+
+.detail-footer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 1px;
+  background-color: rgb(245, 235, 220);
+  height: 90px;
+  position: sticky;
+  bottom: 0;
+}
+.detail-footer div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .detail-footer div {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .detail-footer div {
+    width: 375px;
+    margin: auto;
+  }
+}
+.detail-footer div button {
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(214, 35, 0);
+  color: red;
+  font-size: 20px;
+}
+.detail-footer div button:disabled {
+  opacity: 0.1;
+}
+.detail-footer div button:nth-child(4) {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(214, 35, 0);
+  color: white;
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
 }
