@@ -7,10 +7,22 @@
   .eat-cards {
     display: flex;
     flex-wrap: wrap;
+
+    @include for-size(tablet){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     
+    @include for-size(mobile){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .eat-card {
-        margin-bottom: 50px;
-        width: 300px;
+      margin-bottom: 50px;
+      width: 300px;
       a {
         text-decoration: none;
         display: flex;
@@ -29,9 +41,9 @@
         }
 
         div {
-            margin-top: 5px;
-            display: flex;
-            gap: 15px;
+          margin-top: 5px;
+          display: flex;
+          gap: 15px;
           span {
             font-size: 16px;
             font-family: "Flame Sans";

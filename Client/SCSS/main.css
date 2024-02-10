@@ -857,6 +857,88 @@ body {
   transition: 0.3s;
 }
 
+.location-footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(245, 235, 220);
+  z-index: 1000;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.location-footer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 1px;
+}
+.location-footer .footer {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .location-footer .footer {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .location-footer .footer {
+    width: 375px;
+    margin: auto;
+  }
+}
+.location-footer .footer div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.location-footer .footer div:nth-child(3) {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .location-footer .footer div:nth-child(3) {
+    display: flex;
+  }
+}
+.location-footer .footer div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+.location-footer .footer div a:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .location-footer .footer div a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 767px) {
+  .location-footer .footer div a:hover {
+    opacity: 50%;
+    transition: 0.3s;
+  }
+}
+.location-footer .footer div a img {
+  width: 20px;
+  height: 20px;
+}
+.location-footer .footer div a img:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+.location-footer .footer div a span {
+  line-height: 20px;
+  font-size: 12px;
+  font-family: "Flame Sans";
+}
+
 .location-navbar {
   background-color: rgb(214, 35, 0);
   height: 40px;
@@ -1920,6 +2002,20 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1200px) {
+  .submenu-eat-cards .eat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .submenu-eat-cards .eat-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .submenu-eat-cards .eat-cards .eat-card {
   margin-bottom: 50px;
   width: 300px;
@@ -2165,6 +2261,7 @@ body {
 
 .section-detail-add-order {
   margin-top: 10px;
+  padding-top: 20px;
   width: 1200px;
   margin: auto;
 }
@@ -2257,6 +2354,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-top: 20px;
 }
 @media screen and (max-width: 1200px) {
   .section-detail-nutritional {
