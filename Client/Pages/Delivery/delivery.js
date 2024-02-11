@@ -1,4 +1,4 @@
-const locationElements = document.querySelectorAll('.location-locations .bottom .location');
+const locationElements = document.querySelectorAll('.delivery-locations .bottom .location');
 
 locationElements.forEach(function(location) {
     location.addEventListener('click', function() {

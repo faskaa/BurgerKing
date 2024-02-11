@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var buttons = document.querySelectorAll('.size .right button');
     const orderDiv = document.querySelector('.section-detail-add-order .add-order .order')
     const addButtons = document.querySelectorAll('.order .order-right button');
+    const addOrderDiv = document.querySelector('.section-detail-add-order')
 
 
     buttons.forEach(function(button) {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addButtons.forEach(function(button){
             button.addEventListener('click', function(){
                 orderDiv.classList.add('active')
+                addOrderDiv.classList.add("clicked")
             })
         })
 

@@ -2196,6 +2196,10 @@ body {
   box-shadow: none;
 }
 
+.clicked {
+  display: none;
+}
+
 .section-selected-detail-order {
   width: 1200px;
   margin: auto;
@@ -2430,6 +2434,12 @@ body {
     margin: auto;
   }
 }
+.detail-footer div span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+  padding: 10px;
+}
 .detail-footer div button {
   border-radius: 9999px;
   width: 40px;
@@ -2449,4 +2459,447 @@ body {
   font-size: 16px;
   font-family: "Flame Sans";
   font-weight: bold;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(80, 35, 20);
+  height: 50px;
+  padding: 30px;
+}
+.card-header .left a img {
+  width: 20px;
+  height: 20px;
+}
+.card-header .right {
+  width: 100%;
+}
+.card-header .right h4 {
+  font-size: 24px;
+  font-family: "Flame Bold";
+  color: rgb(245, 235, 220);
+  text-align: center;
+}
+
+.restaurant-detail {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .restaurant-detail {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .restaurant-detail {
+    width: 375px;
+    margin: auto;
+  }
+}
+.restaurant-detail h1 {
+  font-size: 20px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.restaurant-detail .wrapper {
+  border-radius: 10px;
+  background-color: white;
+}
+.restaurant-detail .wrapper .top {
+  display: flex;
+  align-items: center;
+}
+.restaurant-detail .wrapper .top span {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  color: rgb(80, 35, 20);
+  font-size: 18px;
+  font-family: "Flame Sans";
+  padding: 0 20px;
+}
+.restaurant-detail .wrapper .bottom {
+  border-top: 2px solid rgb(187, 163, 145);
+}
+.restaurant-detail .wrapper .bottom .pick-up-type {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .left {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .left button {
+  border-radius: 9999px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(159, 129, 111);
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .left .selected {
+  border-radius: 9999px;
+  width: 20px;
+  border: 10px solid rgb(80, 35, 20);
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .right {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .right span:nth-child(1) {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.restaurant-detail .wrapper .bottom .pick-up-type .right span:nth-child(2) {
+  font-size: 16px;
+  font-family: "Flame Sans";
+}
+
+.selected-pick-up {
+  display: none;
+}
+
+.pick-up-time {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .pick-up-time {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pick-up-time {
+    width: 375px;
+    margin: auto;
+  }
+}
+.pick-up-time h4 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.pick-up-time .times {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.pick-up-time .times .time button {
+  margin-top: 10px;
+  background-color: white;
+  min-width: 128px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+.pick-up-time .times button.selected {
+  background-color: rgb(214, 35, 0);
+  color: white;
+}
+
+.your-order {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .your-order {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .your-order {
+    width: 375px;
+    margin: auto;
+  }
+}
+.your-order h4 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.your-order .orders .order {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.your-order .orders .order .order-header {
+  padding: 0 20px;
+}
+.your-order .orders .order .order-header h4 {
+  font-size: 24px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.your-order .orders .order .order-price {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.your-order .orders .order .order-price span {
+  font-size: 24px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: rgb(80, 35, 20);
+}
+.your-order .orders .order .order-price span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+}
+.your-order .orders .order .order-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+.your-order .orders .order .order-edit .left {
+  padding: 10px;
+}
+.your-order .orders .order .order-edit .left a {
+  text-decoration: none;
+  cursor: default;
+}
+.your-order .orders .order .order-edit .left a button {
+  cursor: pointer;
+  color: rgb(214, 35, 0);
+  font-size: 14px;
+  font-family: "Flame Sans";
+  background-color: transparent;
+  border: none;
+}
+.your-order .orders .order .order-edit .left button {
+  cursor: pointer;
+  color: rgb(214, 35, 0);
+  font-size: 14px;
+  font-family: "Flame Sans";
+  background-color: transparent;
+  border: none;
+}
+.your-order .orders .order .order-edit .right {
+  padding: 20px;
+}
+.your-order .orders .order .order-edit .right span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+  padding: 10px;
+}
+.your-order .orders .order .order-edit .right button {
+  border-radius: 9999px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(214, 35, 0);
+  color: red;
+  font-size: 20px;
+}
+.your-order .orders .order .order-edit .right button:disabled {
+  opacity: 0.1;
+}
+.your-order .orders .order .order-edit .right button:nth-child(4) {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(214, 35, 0);
+  color: white;
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.your-order a {
+  text-decoration: none;
+}
+.your-order a button {
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 9999px;
+  padding: 10px;
+  color: rgb(214, 35, 0);
+  font-size: 12px;
+  font-family: "Flame Sans";
+  border: 1px solid rgb(214, 35, 0);
+}
+
+.subtotal-prices {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .subtotal-prices {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subtotal-prices {
+    width: 375px;
+    margin: auto;
+  }
+}
+.subtotal-prices .subtotal {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subtotal-prices .subtotal span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+}
+.subtotal-prices .tax {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subtotal-prices .tax span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+}
+.subtotal-prices .total {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid rgb(187, 163, 145);
+}
+.subtotal-prices .total span {
+  color: rgb(80, 35, 20);
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+
+div.clicked {
+  display: none;
+}
+
+.card-add-order {
+  margin-top: 10px;
+  padding-top: 20px;
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .card-add-order {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card-add-order {
+    width: 375px;
+    margin: auto;
+  }
+}
+.card-add-order .text span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.card-add-order .add-order {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.card-add-order .add-order div.clicked {
+  display: none;
+}
+.card-add-order .add-order .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  padding: 10px;
+  height: 100px;
+}
+.card-add-order .add-order .order .order-left {
+  display: flex;
+  align-items: center;
+}
+.card-add-order .add-order .order .order-left .left img {
+  width: 60px;
+  height: 60px;
+}
+.card-add-order .add-order .order .order-left .right {
+  display: flex;
+  flex-direction: column;
+}
+.card-add-order .add-order .order .order-left .right h4 {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.card-add-order .add-order .order .order-left .right div {
+  display: flex;
+  gap: 10px;
+}
+.card-add-order .add-order .order .order-left .right div span {
+  font-size: 13px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  margin-top: 5px;
+}
+.card-add-order .add-order .order .order-right button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card-add-order .add-order .order .order-right button:hover {
+  opacity: 50%;
+  transition: 0.2s;
+}
+.card-add-order .add-order .order .order-right button img {
+  width: 14px;
+  height: 14px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+.submit-button button {
+  margin-top: 50px;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(214, 35, 0);
+  color: white;
+  font-size: 16px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  border-radius: 9999px;
+  border: none;
 }

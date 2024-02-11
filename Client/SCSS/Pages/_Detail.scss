@@ -132,6 +132,10 @@
   }
 }
 
+.clicked{
+  display: none
+}
+
 .section-selected-detail-order {
   @include container();
   margin-top: 40px;
@@ -196,7 +200,7 @@
 .section-detail-add-order {
   margin-top: 10px;
   padding-top: 20px;
- 
+
   @include container();
   .text {
     span {
@@ -341,34 +345,38 @@
 
   div {
     @include container();
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     height: 100%;
 
-    button{
+    span {
+      color: rgb(80, 35, 20);
+      font-size: 16px;
+      font-family: "Flame Sans";
+      padding: 10px;
+    }
+    button {
+      border-radius: 9999px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgb(214, 35, 0);
+      color: red;
+      font-size: 20px;
 
-        border-radius: 9999px;
-        width: 40px;
-        height: 40px;
-        border: 1px solid rgb(214, 35, 0);
-        color: red;
-        font-size: 20px;
-
-        &:disabled{
-            opacity: 0.1;
-        }
-        &:nth-child(4){
-            width: 200px;
-            height: 50px;
-            background-color: rgb(214, 35, 0);
-            color: white;
-            font-size: 16px;
-            font-family: "Flame Sans";
-            font-weight: bold;
-
-        }
+      &:disabled {
+        opacity: 0.1;
+      }
+      &:nth-child(4) {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(214, 35, 0);
+        color: white;
+        font-size: 16px;
+        font-family: "Flame Sans";
+        font-weight: bold;
+      }
     }
   }
 }
