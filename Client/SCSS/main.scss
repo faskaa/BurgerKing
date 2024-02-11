@@ -3,21 +3,14 @@
 
 @import "./Base/reset";
 @import "./Base/typography";
-
-
+    
 
 @import "./Utils/mixins";
 @import "./Utils/variables";
 
 
-
-
 @import "./Layout/navbar";
 @import "./Layout/footer";
-
-
-
-
 
 
 @import "./Pages/Home";
@@ -29,4 +22,5 @@
 @import "./Pages/SubMenu";
 @import "./Pages/Detail";
 @import "./Pages/Order-Pickup";
+
 

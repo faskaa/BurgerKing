@@ -24,29 +24,6 @@ divOrders.forEach(function(order){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 driveThruBtn.addEventListener('click',e=>{
     console.log("a");
     pickUpTime.classList.add("selected-pick-up")

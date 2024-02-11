@@ -26,3 +26,4 @@ locationElements.forEach(function(location) {
         });
     });
 });
+

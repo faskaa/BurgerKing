@@ -858,7 +858,7 @@ body {
 }
 
 .location-footer {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: rgb(245, 235, 220);
@@ -1072,6 +1072,380 @@ body {
   color: rgb(80, 35, 20);
 }
 
+.favorites-content,
+.recents-content {
+  display: none;
+}
+
+.nearby-content {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .nearby-content {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nearby-content {
+    width: 375px;
+    margin: auto;
+  }
+}
+.nearby-content .location {
+  height: 100%;
+  border: 2px solid rgb(198, 198, 145);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nearby-content .location .location-top {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nearby-content .location .location-top .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nearby-content .location .location-top .left h1 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Flame Bold";
+  color: rgb(80, 35, 20);
+}
+.nearby-content .location .location-top .left .mid span {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.nearby-content .location .location-top .left .functionality {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.nearby-content .location .location-top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.nearby-content .location .location-top .right button {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+.nearby-content .location .location-top .right button img {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.nearby-content .location .location-top .right button img.active {
+  transition: 1s;
+  display: initial;
+}
+.nearby-content .location .location-bottom {
+  display: none;
+}
+.nearby-content .location .location-bottom .order-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+.nearby-content .location .location-bottom .order-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  text-decoration: none;
+  font-weight: bold;
+}
+.nearby-content .location .location-bottom .order-menu a button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nearby-content .location .location-bottom .order-menu a button img {
+  width: 24px;
+}
+.nearby-content .location .location-bottom .order-menu a span {
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+
+.favorites-content {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .favorites-content {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .favorites-content {
+    width: 375px;
+    margin: auto;
+  }
+}
+.favorites-content .location {
+  height: 100%;
+  border: 2px solid rgb(198, 198, 145);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.favorites-content .location .location-top {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.favorites-content .location .location-top .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.favorites-content .location .location-top .left h1 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Flame Bold";
+  color: rgb(80, 35, 20);
+}
+.favorites-content .location .location-top .left .mid span {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.favorites-content .location .location-top .left .functionality {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.favorites-content .location .location-top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.favorites-content .location .location-top .right button {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+.favorites-content .location .location-top .right button img {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.favorites-content .location .location-top .right button img.active {
+  transition: 1s;
+  display: initial;
+}
+.favorites-content .location .location-bottom {
+  display: none;
+}
+.favorites-content .location .location-bottom .order-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+.favorites-content .location .location-bottom .order-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  text-decoration: none;
+  font-weight: bold;
+}
+.favorites-content .location .location-bottom .order-menu a button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favorites-content .location .location-bottom .order-menu a button img {
+  width: 24px;
+}
+.favorites-content .location .location-bottom .order-menu a span {
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+
+.recents-content {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .recents-content {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recents-content {
+    width: 375px;
+    margin: auto;
+  }
+}
+.recents-content .location {
+  height: 100%;
+  border: 2px solid rgb(198, 198, 145);
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recents-content .location .location-top {
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.recents-content .location .location-top .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.recents-content .location .location-top .left h1 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Flame Bold";
+  color: rgb(80, 35, 20);
+}
+.recents-content .location .location-top .left .mid span {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.recents-content .location .location-top .left .functionality {
+  font-size: 13px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+.recents-content .location .location-top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.recents-content .location .location-top .right button {
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+.recents-content .location .location-top .right button img {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+.recents-content .location .location-top .right button img.active {
+  transition: 1s;
+  display: initial;
+}
+.recents-content .location .location-bottom {
+  display: none;
+}
+.recents-content .location .location-bottom .order-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+.recents-content .location .location-bottom .order-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60px;
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  text-decoration: none;
+  font-weight: bold;
+}
+.recents-content .location .location-bottom .order-menu a button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recents-content .location .location-bottom .order-menu a button img {
+  width: 24px;
+}
+.recents-content .location .location-bottom .order-menu a span {
+  font-family: "Flame Sans";
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+}
+
 .location-locations {
   width: 1200px;
   margin: auto;
@@ -1088,14 +1462,10 @@ body {
     margin: auto;
   }
 }
-.location-locations .top {
-  margin-top: 5px;
+.location-locations .locations-menu {
   display: flex;
 }
-.location-locations .top a {
-  width: 100%;
-}
-.location-locations .top a button {
+.location-locations .locations-menu button {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -1106,119 +1476,10 @@ body {
   border: none;
   font-family: "Flame Sans";
 }
-.location-locations .top a .nearby {
+.location-locations .locations-menu .active {
   color: red;
   border-bottom: 3px solid red;
   font-weight: bold;
-}
-.location-locations .bottom .location.active .location-bottom {
-  display: initial;
-}
-.location-locations .bottom .location {
-  height: 100%;
-  border: 2px solid rgb(198, 198, 145);
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.location-locations .bottom .location .location-top {
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.location-locations .bottom .location .location-top .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.location-locations .bottom .location .location-top .left h1 {
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "Flame Bold";
-  color: rgb(80, 35, 20);
-}
-.location-locations .bottom .location .location-top .left .mid span {
-  font-size: 13px;
-  font-family: "Flame Sans";
-  line-height: 20px;
-  color: rgb(80, 35, 20);
-}
-.location-locations .bottom .location .location-top .left .functionality {
-  font-size: 13px;
-  font-family: "Flame Sans";
-  line-height: 20px;
-  color: rgb(80, 35, 20);
-}
-.location-locations .bottom .location .location-top .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-.location-locations .bottom .location .location-top .right button {
-  height: 24px;
-  background-color: transparent;
-  border: none;
-}
-.location-locations .bottom .location .location-top .right button img {
-  width: 24px;
-  height: 24px;
-  display: none;
-}
-.location-locations .bottom .location .location-top .right button img.active {
-  transition: 1s;
-  display: initial;
-}
-.location-locations .bottom .location .location-bottom {
-  display: none;
-}
-.location-locations .bottom .location .location-bottom .order-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 50px;
-}
-.location-locations .bottom .location .location-bottom .order-menu a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 60px;
-  font-family: "Flame Sans";
-  line-height: 20px;
-  color: rgb(80, 35, 20);
-  text-decoration: none;
-  font-weight: bold;
-}
-.location-locations .bottom .location .location-bottom .order-menu a button {
-  border: none;
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.location-locations .bottom .location .location-bottom .order-menu a button img {
-  width: 24px;
-}
-.location-locations .bottom .location .location-bottom .order-menu a span {
-  font-family: "Flame Sans";
-  line-height: 20px;
-  color: rgb(80, 35, 20);
 }
 
 .delivery-navbar {
