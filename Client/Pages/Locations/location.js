@@ -108,3 +108,28 @@ recentImg.addEventListener('click' , function(){
     })
     
 })
+
+
+// document.getElementById('searchInput').addEventListener('keyup', function(event) {
+//     if (event.key === 'Enter') {
+        
+//         document.getElementById('searchForm').submit();
+//     }
+// });
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+    console.log('Form submit event triggered');
+    event.preventDefault();
+    submitForm();
+});
+
+document.getElementById('searchInput').addEventListener('keyup', function(event) {
+    console.log('Keyup event triggered');
+    if (event.key === 'Enter') {
+        submitForm();
+    }
+});
+
+function submitForm() {
+    console.log('Submitting form');
+    document.getElementById('searchForm').submit();
+}
