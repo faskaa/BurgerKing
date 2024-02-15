@@ -40,6 +40,7 @@ orders.forEach(function (order) {
             confirmButtonText: 'Yes, remove it!'
         }).then((result)=>{
             if(result.isConfirmed){
+                order.style.display = 'none';
                 console.log("remove clicked");
             }
         })

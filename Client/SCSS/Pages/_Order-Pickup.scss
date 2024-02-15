@@ -1,3 +1,285 @@
+div.pickup-form-wrapper {
+  @include container();
+  form {
+    .restoran-details {
+      h4 {
+        margin-top: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+        font-size: 20px;
+        font-family: "Flame Sans";
+        color: rgb(80, 35, 20);
+        font-weight: bold;
+      }
+      .detail {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom: 1px solid rgb(187, 163, 145);
+
+        span {
+          font-size: 16px;
+          font-family: "Flame Sans";
+          color: rgb(80, 35, 20);
+        }
+      }
+
+      .form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        padding-left: 24px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        label {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+          width: max-content;
+
+          font-size: 18px;
+          font-family: "Flame Sans";
+          color: rgb(80, 35, 20);
+          font-weight: bold;
+
+          input[type="radio"] {
+            margin-right: 5px;
+            cursor: pointer;
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgb(80, 35, 20);
+            border-radius: 50%;
+            background-color: white;
+
+            &:checked {
+              background-color: rgb(80, 35, 20);
+              border-color: rgb(80, 35, 20);
+            }
+          }
+        }
+      }
+    }
+
+    // .pick-up-time{
+    //     h4{
+    //         margin-top: 20px;
+    //         line-height: 28px;
+    //         margin-bottom: 12px;
+    //         font-size: 20px;
+    //         font-family: "Flame Sans";
+    //         color: rgb(80, 35, 20);
+    //         font-weight: bold;
+    //     }
+
+    //     .times{
+
+    //         input{
+    //             background-color: rgb(214, 35, 0);
+    //             min-width: 128px;
+    //             padding-bottom: 12px;
+    //             padding-top: 12px;
+    //             padding-right: 16px;
+    //             padding-left: 16px;
+    //             border-radius: 10px;
+    //             border: none;
+    //             cursor: pointer;
+
+    //             color: white;
+    //             font-size: 20px;
+
+    //         }
+    //     }
+    // }
+
+    .orders-wrapper {
+      h4 {
+        margin-top: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+        font-size: 20px;
+        font-family: "Flame Sans";
+        color: rgb(80, 35, 20);
+        font-weight: bold;
+      }
+      .orders {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .order {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: white;
+          .top {
+            span {
+              font-size: 24px;
+              font-family: "Flame Sans";
+              color: rgb(80, 35, 20);
+              font-weight: bold;
+            }
+          }
+
+          .mid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+              &:nth-child(1) {
+                font-size: 24px;
+                font-family: "Flame Sans";
+                color: rgb(80, 35, 20);
+                font-weight: bold;
+              }
+
+              &:nth-child(2) {
+                font-size: 16px;
+                font-family: "Flame Sans";
+                color: rgb(80, 35, 20);
+              }
+            }
+          }
+
+          .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+              a {
+                text-decoration: none;
+              }
+              button {
+                color: rgb(214, 35, 0);
+                font-size: 14px;
+                font-family: "Flame Sans";
+                font-weight: bold;
+                background-color: transparent;
+                border: none;
+              }
+            }
+
+            .right {
+              display: flex;
+              gap: 20px;
+              align-items: center;
+              .decrement:disabled {
+                background-color: #ccc;
+                color: #666;
+                cursor: not-allowed;
+                opacity: 0.3;
+              }
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 999px;
+                width: 30px;
+                height: 30px;
+                border: 1px solid rgb(214, 35, 0);
+                background-color: transparent;
+                color: rgb(214, 35, 0);
+                font-size: 30px;
+                font-family: "Flame Sans";
+                font-weight: bold;
+              }
+              span {
+                color: rgb(214, 35, 0);
+                font-size: 15px;
+                font-family: "Flame Sans";
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .removed {
+          display: none;
+        }
+      }
+
+      a {
+        button {
+          margin-top: 10px;
+          padding: 5px;
+          background-color: transparent;
+          border: 2px solid rgb(214, 35, 0);
+          color: rgb(214, 35, 0);
+          font-size: 15px;
+          font-weight: bold;
+          border-radius: 40px;
+        }
+      }
+    }
+
+    .taxs-wrapper {
+      .taxs {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 16px;
+            font-family: "Flame Sans";
+            color: rgb(80, 35, 20);
+          }
+        }
+
+        div.total-tax {
+          margin-top: 5px;
+          padding-top: 15px;
+          border-top: 1px solid rgb(80, 35, 20);
+          span {
+            font-size: 18px;
+            font-family: "Flame Sans";
+            color: rgb(80, 35, 20);
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    div.submit-wrapper {
+        display: flex;
+        justify-content: center;
+  
+        input.submit-btn {
+          width: 300px;
+          text-align: center;
+          padding: 10px;
+          background-color: rgb(214, 35, 0);
+          font-size: 20px;
+          font-family: "Flame Sans";
+          color: white;
+          font-weight: bold;
+          border: none;
+          border-radius: 40px;
+        }
+      }
+  }
+}
+
 // .card-header {
 //   display: flex;
 //   align-items: center;

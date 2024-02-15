@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="Icon" type="Images/Icon" href="../../Assets/Icons/burger-king.png">
+    <title>Detail - Burger King</title>
     <link
       href="https://db.onlinewebfonts.com/c/29eee6d957e73039264c9de9fd949d20?family=Flame+Sans"
       rel="stylesheet"
@@ -19,10 +21,10 @@
     <header>
       <div class="navbar">
         <div class="top">
-          <a class="burgermenu" href="">
+          <a class="burgermenu" href="../BurgerMenu/burgermenu.html">
             <img src="./../../Assets/Icons/burger-bar.png" alt="" />
           </a>
-          <a class="logo" href="./home.html">
+          <a class="logo" href="../Home/home.html">
             <img src="./../../Assets/Icons/burger-king.png" alt="" />
           </a>
           <div class="buttons">
@@ -61,7 +63,8 @@
         </div>
       </div>
     </section>
-    <section class="section-detail-order">
+    <!-- <section class="section-detail-order">
+
       <div>
         <div class="detail-sizes">
           <div class="top">
@@ -107,8 +110,131 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-selected-detail-order">
+    </section> -->
+
+    <div class="form-section">
+      <form>
+        <div class="form">
+          <h4>Standart Drink Size</h4>
+          <div class="size">
+            <label>
+              <div class="infos">
+                <img src="../../Assets/Icons/small-drink-size.webp" alt="" />
+                <div class="info">
+                  <span>Small</span>
+                  <span>100 cal</span>
+                </div>
+              </div>
+              <input required type="radio" name="gender" value="male" />
+            </label>
+          </div>
+          <div class="size">
+            <label>
+              <div class="infos">
+                <img src="../../Assets/Icons/small-drink-size.webp" alt="" />
+                <div class="info">
+                  <span>Medium</span>
+                  <span>150 cal</span>
+                </div>
+              </div>
+              <input  required  type="radio" name="gender" value="female" />
+            </label>
+          </div>
+          <div class="size">
+            <label>
+              <div class="infos">
+                <img src="../../Assets/Icons/small-drink-size.webp" alt="" />
+                <div class="info">
+                  <span>Large</span>
+                  <span>200 cal</span>
+                </div>
+              </div>
+              <input  required  type="radio" name="gender" value="other" />
+            </label>
+          </div>
+        </div>
+        <section class="section-selected-detail-order">
+          <div>
+            <div class="detail-order">
+              <div class="top">
+                <span>Your Order</span>
+              </div>
+              <div class="middle">
+                <div class="order">
+                  <div class="left">
+                    <img src="../../Assets/Images/coca-cola.webp" alt="" />
+                    <div class="info">
+                      <span>Small Coca-Cola</span>
+                      <p>240 cal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="section-detail-add-order">
+          <div class="text">
+            <span>Add to Order</span>
+          </div>
+          <div class="add-order">
+            <div class="order">
+              <div class="order-left">
+                <div class="left">
+                  <img src="../../Assets/Images/coca-cola.webp" alt="" />
+                </div>
+                <div class="right">
+                  <h4>HERSHEY'S® Sundae Pie</h4>
+                  <div>
+                    <span>$2.79</span>
+                    <span>310 Cal</span>
+                  </div>
+                </div>
+              </div>
+              <div class="order-right">
+                <button type="button" class="order-clicked">
+                  <img src="../../Assets/Icons/plus.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="section-detail-nutritional">
+          <div class="bottom">
+            <span>Information</span>
+            <span
+              >Calories will vary based on modifications made to item. Product
+              availability, prices, offers and discounts may vary from
+              in-restaurant. BK printed coupons not valid on online orders.</span
+            >
+            <span
+              >2,000 calories a day is used for general nutrition advice, but
+              calorie needs vary. Click for additional Nutrition information and
+              Allergens information.</span
+            >
+            <span
+              >Warning: indicates that sodium (salt) content of this item is higher
+              than the total daily recommended limit (2,300mg). High Sodium intake
+              can increase blood pressure and risk of heart disease and
+              stroke.</span
+            >
+          </div>
+        </section>
+
+        <div class="detail-footer">
+          <div>
+            <button type="button" id="incrementBtn">+</button>
+            <span id="numberDisplay">1</span>
+            <button type="button" id="decrementBtn">-</button>
+            <button type="submit" class="add-to-card">Add-$2.99</button>
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+
+    <!-- <section class="section-selected-detail-order">
       <div>
         <div class="detail-order">
           <div class="top">
@@ -127,13 +253,12 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-detail-add-order">
+    </section> -->
+    <!-- <section class="section-detail-add-order">
       <div class="text">
         <span>Add to Order</span>
       </div>
       <div class="add-order">
-
         <div class="order">
           <div class="order-left">
             <div class="left">
@@ -154,8 +279,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-detail-nutritional">
+    </section> -->
+    <!-- <section class="section-detail-nutritional">
       <div class="top">
         <span>Nutritional Information</span>
         <a href="">
@@ -181,15 +306,8 @@
           stroke.</span
         >
       </div>
-    </section>
+    </section> -->
 
-    <div class="detail-footer">
-        <div>
-            <button id="incrementBtn">+</button>
-            <span id="numberDisplay">1</span>
-            <button id="decrementBtn">-</button>
-            <button class="add-to-card">Add-$2.99</button>
-        </div>
-    </div>
+
   </body>
 </html>

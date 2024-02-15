@@ -64,58 +64,7 @@ menuBtns.forEach(function(button){
     })
 })
 
-// const a = document.querySelector('.nearby-content .location .location-top .right button');
-// a.addEventListener('click' , e=>{
-//     console.log("Ok");
 
-//     const imgElemet = this.querySelectorAll('img');
-//     imgElemet.forEach(function(imgs){
-//         console.log("aa");
-//     })
-    
-// })
-
-const nearbyImg = document.querySelector('.nearby-content .location .location-top .right button');
-nearbyImg.addEventListener('click' , function(){
-    console.log("Ok");
-    var imgElements = this.querySelectorAll("img");
-    imgElements.forEach(function(imgs){
-
-        imgs.classList.toggle("active")
-    })
-    
-})
-
-
-const favoriteImg = document.querySelector('.favorites-content .location .location-top .right button');
-favoriteImg.addEventListener('click' , function(){
-    console.log("Ok");
-    var imgElements = this.querySelectorAll("img");
-    imgElements.forEach(function(imgs){
-
-        imgs.classList.toggle("active")
-    })
-    
-})
-
-const recentImg = document.querySelector('.recents-content .location .location-top .right button');
-recentImg.addEventListener('click' , function(){
-    console.log("Ok");
-    var imgElements = this.querySelectorAll("img");
-    imgElements.forEach(function(imgs){
-
-        imgs.classList.toggle("active")
-    })
-    
-})
-
-
-// document.getElementById('searchInput').addEventListener('keyup', function(event) {
-//     if (event.key === 'Enter') {
-        
-//         document.getElementById('searchForm').submit();
-//     }
-// });
 document.getElementById('searchForm').addEventListener('submit', function (event) {
     console.log('Form submit event triggered');
     event.preventDefault();
@@ -133,3 +82,30 @@ function submitForm() {
     console.log('Submitting form');
     document.getElementById('searchForm').submit();
 }
+
+
+
+document.querySelectorAll('.location-top .left').forEach(function(leftElement) {
+    leftElement.addEventListener('click', function() {
+      var locationElement = leftElement.closest('.location');
+
+      var locationBottomElement = locationElement.querySelector('.location-bottom');
+
+      locationBottomElement.classList.toggle('clicked');
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var locationButtons = document.querySelectorAll('.location button');
+  
+    locationButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var images = button.querySelectorAll('img');
+  
+        images.forEach(function(img) {
+          img.classList.toggle('active');
+        });
+      });
+    });
+  });

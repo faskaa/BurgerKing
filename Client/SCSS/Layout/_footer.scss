@@ -23,13 +23,7 @@ footer {
       display: flex;
       align-items: center;
       flex-direction: column;
-      &:nth-child(3) {
-        display: none;
 
-        @include for-size(mobile) {
-          display: flex;
-        }
-      }
       a{
         display: flex;
         flex-direction: column;

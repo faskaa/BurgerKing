@@ -11,105 +11,174 @@ const addOrderDiv = document.querySelector('.card-add-order')
 
 
 
-divOrders.forEach(function(order){
-    addOrders.forEach(function(button) {
-        button.addEventListener('click', e=>{
-            order.classList.add("clicked")
-            addOrderDiv.classList.add("clicked")
-        })
-    })
+// divOrders.forEach(function(order){
+//     addOrders.forEach(function(button) {
+//         button.addEventListener('click', e=>{
+//             order.classList.add("clicked")
+//             addOrderDiv.classList.add("clicked")
+//         })
+//     })
     
-})
+// })
 
 
 
 
-driveThruBtn.addEventListener('click',e=>{
-    console.log("a");
-    pickUpTime.classList.add("selected-pick-up")
-})
+// driveThruBtn.addEventListener('click',e=>{
+//     console.log("a");
+//     pickUpTime.classList.add("selected-pick-up")
+// })
 
-pickUpBtn.addEventListener('click',e=>{
-    console.log("pick");
-    pickUpTime.classList.remove("selected-pick-up")
-})
+// pickUpBtn.addEventListener('click',e=>{
+//     console.log("pick");
+//     pickUpTime.classList.remove("selected-pick-up")
+// })
 
-dineInBtn.addEventListener('click',e=>{
-    console.log("dine");
-    pickUpTime.classList.remove("selected-pick-up")
-})
+// dineInBtn.addEventListener('click',e=>{
+//     console.log("dine");
+//     pickUpTime.classList.remove("selected-pick-up")
+// })
 
-buttons.forEach(function(button){
+// buttons.forEach(function(button){
 
-    button.addEventListener('click',e=>{
-        console.log("Clicked");
+//     button.addEventListener('click',e=>{
+//         console.log("Clicked");
         
-        buttons.forEach(function(btn){
-            btn.classList.remove("selected")
-        })
+//         buttons.forEach(function(btn){
+//             btn.classList.remove("selected")
+//         })
 
-        button.classList.toggle("selected")
+//         button.classList.toggle("selected")
 
-    })
-})
+//     })
+// })
 
 
-function updateNumber(operation) {
-    var numberElement = document.getElementById('numberDisplay');
-    var decrementBtn = document.getElementById('decrementBtn');
-    var currentNumber = parseInt(numberElement.innerText);
+
+
+
+
+
+
+
+
+
+
+
+// function updateNumber(operation) {
+//     var numberElement = document.getElementById('numberDisplay');
+//     var decrementBtn = document.getElementById('decrementBtn');
+//     var currentNumber = parseInt(numberElement.innerText);
+
+//     if (operation === '+') {
+//         currentNumber++;
+//     } else if (operation === '-') {
+//         currentNumber = Math.max(1, currentNumber - 1);
+//     }
+
+//     numberElement.innerText = currentNumber;
+
+//     decrementBtn.disabled = (currentNumber === 1);
+// }
+
+// document.getElementById('incrementBtn').addEventListener('click', function() {
+//     updateNumber('+');
+// });
+
+// document.getElementById('decrementBtn').addEventListener('click', function() {
+//     updateNumber('-');
+// });
+
+
+
+
+// removeButton.addEventListener('click', e => {
+//     Swal.fire({
+//         title: 'Are you sure?',
+//         text: 'You won\'t be able to revert this!',
+//         icon: 'warning',
+//         showCancelButton: true,
+//         confirmButtonColor: '#3085d6',
+//         cancelButtonColor: '#d33',
+//         confirmButtonText: 'Yes, remove it!'
+//     }).then((result) => {
+//         if (result.isConfirmed) {
+//             console.log('Remove Clicked');
+//         }
+//     });
+
+// });
+
+// timeButtons.forEach(function(button){
+//     button.addEventListener('click', e=>{
+//         console.log("Time button clicked");
+//         timeButtons.forEach(function(btn){
+//             btn.classList.remove("selected")
+//         })
+//         button.classList.toggle("selected")
+//     })
+// })
+
+
+// function selectButton(selectedButton) {
+//     var buttons = document.querySelectorAll('.times input[type="button"]');
+//     buttons.forEach(function(button) {
+//         button.classList.remove('selected');
+//     });
+
+//     selectedButton.classList.add('selected');
+// }
+
+
+
+
+function updateNumber(operation, order) {
+    var numberElement = order.querySelector('.display');
+    var decrementBtn = order.querySelector('.decrement');
+    var currentNumber = parseInt(numberElement.innerHTML);
 
     if (operation === '+') {
         currentNumber++;
-    } else if (operation === '-') {
+    }
+
+    if (operation === '-') {
         currentNumber = Math.max(1, currentNumber - 1);
     }
 
-    numberElement.innerText = currentNumber;
-
+    numberElement.innerHTML = currentNumber;
     decrementBtn.disabled = (currentNumber === 1);
 }
 
-document.getElementById('incrementBtn').addEventListener('click', function() {
-    updateNumber('+');
-});
+var orders = document.querySelectorAll('.orders .order');
+orders.forEach(function (order) {
+    var incrementBtn = order.querySelector('.increment');
+    var decrementBtn = order.querySelector('.decrement');
 
-document.getElementById('decrementBtn').addEventListener('click', function() {
-    updateNumber('-');
-});
-
-
-
-
-removeButton.addEventListener('click', e => {
-    Swal.fire({
-        title: 'Are you sure?',
-        text: 'You won\'t be able to revert this!',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, remove it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            console.log('Remove Clicked');
-        }
+    incrementBtn.addEventListener('click', function () {
+        updateNumber('+', order);
     });
 
-});
+    decrementBtn.addEventListener('click', function () {
+        updateNumber('-', order);
+    });
 
-timeButtons.forEach(function(button){
-    button.addEventListener('click', e=>{
-        console.log("Time button clicked");
-        timeButtons.forEach(function(btn){
-            btn.classList.remove("selected")
+    var removeBtn = order.querySelector('.remove');
+    removeBtn.addEventListener('click', e=>{
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'You won\'t be able to revert this!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, remove it!'
+        }).then((result)=>{
+            if(result.isConfirmed){
+                order.classList.add("removed");
+                console.log("remove clicked");
+            }
         })
-        button.classList.toggle("selected")
     })
-})
-
-
-
-
+});
 
 

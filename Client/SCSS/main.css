@@ -113,8 +113,13 @@ header .navbar .top {
 }
 header .navbar .top .burgermenu {
   text-decoration: none;
-  width: 24px;
+  width: 209.5px;
   height: 24px;
+}
+@media screen and (max-width: 767px) {
+  header .navbar .top .burgermenu {
+    width: 115px;
+  }
 }
 header .navbar .top .burgermenu img {
   width: 24px;
@@ -130,7 +135,6 @@ header .navbar .top .logo {
   height: 38px;
 }
 header .navbar .top .logo img {
-  left: 100px;
   width: 38px;
   height: 38px;
 }
@@ -260,14 +264,6 @@ footer .footer div {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-footer .footer div:nth-child(3) {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  footer .footer div:nth-child(3) {
-    display: flex;
-  }
 }
 footer .footer div a {
   display: flex;
@@ -857,6 +853,10 @@ body {
   transition: 0.3s;
 }
 
+.location-body {
+  min-height: 100vh;
+}
+
 .location-footer {
   position: fixed;
   bottom: 0;
@@ -892,14 +892,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.location-footer .footer div:nth-child(3) {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .location-footer .footer div:nth-child(3) {
-    display: flex;
-  }
 }
 .location-footer .footer div a {
   display: flex;
@@ -1072,6 +1064,7 @@ body {
   color: rgb(80, 35, 20);
 }
 
+.nearby-content,
 .favorites-content,
 .recents-content {
   display: none;
@@ -1092,6 +1085,9 @@ body {
     width: 375px;
     margin: auto;
   }
+}
+.nearby-content .hidden {
+  height: 80px;
 }
 .nearby-content .location {
   height: 100%;
@@ -1216,6 +1212,9 @@ body {
     margin: auto;
   }
 }
+.favorites-content .hidden {
+  height: 80px;
+}
 .favorites-content .location {
   height: 100%;
   border: 2px solid rgb(198, 198, 145);
@@ -1338,6 +1337,9 @@ body {
     width: 375px;
     margin: auto;
   }
+}
+.recents-content .hidden {
+  height: 80px;
 }
 .recents-content .location {
   height: 100%;
@@ -1482,6 +1484,10 @@ body {
   font-weight: bold;
 }
 
+.delivery-body {
+  min-height: 100vh;
+}
+
 .delivery-navbar {
   background-color: rgb(214, 35, 0);
   height: 40px;
@@ -1621,6 +1627,7 @@ body {
   color: rgb(80, 35, 20);
 }
 
+.nearby-content,
 .favorites-content,
 .recents-content {
   display: none;
@@ -1642,6 +1649,9 @@ body {
     margin: auto;
   }
 }
+.nearby-content .hidden {
+  height: 80px;
+}
 .nearby-content .location {
   height: 100%;
   border: 2px solid rgb(198, 198, 145);
@@ -1661,12 +1671,12 @@ body {
   padding-bottom: 8px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
 }
 .nearby-content .location .location-top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .nearby-content .location .location-top .left h1 {
   margin-bottom: 4px;
@@ -1748,6 +1758,9 @@ body {
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
+.nearby-content .location .clicked {
+  display: flex;
+}
 
 .favorites-content {
   width: 1200px;
@@ -1764,6 +1777,9 @@ body {
     width: 375px;
     margin: auto;
   }
+}
+.favorites-content .hidden {
+  height: 80px;
 }
 .favorites-content .location {
   height: 100%;
@@ -1784,12 +1800,12 @@ body {
   padding-bottom: 8px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
 }
 .favorites-content .location .location-top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .favorites-content .location .location-top .left h1 {
   margin-bottom: 4px;
@@ -1871,6 +1887,9 @@ body {
   line-height: 20px;
   color: rgb(80, 35, 20);
 }
+.favorites-content .location .clicked {
+  display: flex;
+}
 
 .recents-content {
   width: 1200px;
@@ -1887,6 +1906,9 @@ body {
     width: 375px;
     margin: auto;
   }
+}
+.recents-content .hidden {
+  height: 80px;
 }
 .recents-content .location {
   height: 100%;
@@ -1907,12 +1929,12 @@ body {
   padding-bottom: 8px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
 }
 .recents-content .location .location-top .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .recents-content .location .location-top .left h1 {
   margin-bottom: 4px;
@@ -1993,6 +2015,9 @@ body {
   font-family: "Flame Sans";
   line-height: 20px;
   color: rgb(80, 35, 20);
+}
+.recents-content .location .clicked {
+  display: flex;
 }
 
 .delivery-locations {
@@ -2722,6 +2747,77 @@ body {
   display: none;
 }
 
+.form-section {
+  margin-top: 30px;
+}
+.form-section form .form {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+@media screen and (max-width: 1200px) {
+  .form-section form .form {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form-section form .form {
+    width: 375px;
+    margin: auto;
+  }
+}
+.form-section form .form h4 {
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+.form-section form .form div.size {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-section form .form div.size label {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-section form .form div.size label .infos {
+  display: flex;
+}
+.form-section form .form div.size label .infos .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.form-section form .form div.size label .infos .info span {
+  font-size: 15px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.form-section form .form div.size label input[type=radio] {
+  margin-right: 5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(80, 35, 20);
+  border-radius: 50%;
+  background-color: white;
+}
+.form-section form .form div.size label input[type=radio]:checked {
+  background-color: rgb(80, 35, 20);
+  border-color: rgb(80, 35, 20);
+}
+
 .section-selected-detail-order {
   width: 1200px;
   margin: auto;
@@ -2983,6 +3079,233 @@ body {
   font-weight: bold;
 }
 
+div.pickup-form-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  div.pickup-form-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  div.pickup-form-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+div.pickup-form-wrapper form .restoran-details h4 {
+  margin-top: 20px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .restoran-details .detail {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid rgb(187, 163, 145);
+}
+div.pickup-form-wrapper form .restoran-details .detail span {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+div.pickup-form-wrapper form .restoran-details .form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+div.pickup-form-wrapper form .restoran-details .form label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 18px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .restoran-details .form label input[type=radio] {
+  margin-right: 5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(80, 35, 20);
+  border-radius: 50%;
+  background-color: white;
+}
+div.pickup-form-wrapper form .restoran-details .form label input[type=radio]:checked {
+  background-color: rgb(80, 35, 20);
+  border-color: rgb(80, 35, 20);
+}
+div.pickup-form-wrapper form .orders-wrapper h4 {
+  margin-top: 20px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .top span {
+  font-size: 24px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(1) {
+  font-size: 24px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(2) {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .left a {
+  text-decoration: none;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .left button {
+  color: rgb(214, 35, 0);
+  font-size: 14px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .right .decrement:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .right button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(214, 35, 0);
+  background-color: transparent;
+  color: rgb(214, 35, 0);
+  font-size: 30px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .order .bottom .right span {
+  color: rgb(214, 35, 0);
+  font-size: 15px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+div.pickup-form-wrapper form .orders-wrapper .orders .removed {
+  display: none;
+}
+div.pickup-form-wrapper form .orders-wrapper a button {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid rgb(214, 35, 0);
+  color: rgb(214, 35, 0);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+div.pickup-form-wrapper form .taxs-wrapper .taxs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+div.pickup-form-wrapper form .taxs-wrapper .taxs div {
+  display: flex;
+  justify-content: space-between;
+}
+div.pickup-form-wrapper form .taxs-wrapper .taxs div span {
+  font-size: 16px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+div.pickup-form-wrapper form .taxs-wrapper .taxs div.total-tax {
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(80, 35, 20);
+}
+div.pickup-form-wrapper form .taxs-wrapper .taxs div.total-tax span {
+  font-size: 18px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.pickup-form-wrapper form div.submit-wrapper {
+  display: flex;
+  justify-content: center;
+}
+div.pickup-form-wrapper form div.submit-wrapper input.submit-btn {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(214, 35, 0);
+  font-size: 20px;
+  font-family: "Flame Sans";
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+}
+
 .card-header {
   display: flex;
   align-items: center;
@@ -3004,7 +3327,7 @@ body {
   text-align: center;
 }
 
-div.form-wrapper {
+div.delivery-form-wrapper {
   width: 1200px;
   margin: auto;
   display: flex;
@@ -3012,18 +3335,18 @@ div.form-wrapper {
   gap: 20px;
 }
 @media screen and (max-width: 1200px) {
-  div.form-wrapper {
+  div.delivery-form-wrapper {
     width: 767px;
     margin: auto;
   }
 }
 @media screen and (max-width: 767px) {
-  div.form-wrapper {
+  div.delivery-form-wrapper {
     width: 375px;
     margin: auto;
   }
 }
-div.form-wrapper h4 {
+div.delivery-form-wrapper h4 {
   margin-top: 20px;
   line-height: 28px;
   margin-bottom: 12px;
@@ -3032,32 +3355,32 @@ div.form-wrapper h4 {
   color: rgb(80, 35, 20);
   font-weight: bold;
 }
-div.form-wrapper form .form {
+div.delivery-form-wrapper form .form {
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   background-color: white;
 }
-div.form-wrapper form .form .time {
+div.delivery-form-wrapper form .form .time {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-div.form-wrapper form .form .location {
+div.delivery-form-wrapper form .form .location {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
   margin-bottom: 10px;
 }
-div.form-wrapper form .form label {
+div.delivery-form-wrapper form .form label {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
   font-weight: bold;
   margin-bottom: 5px;
 }
-div.form-wrapper form .form input {
+div.delivery-form-wrapper form .form input {
   outline: none;
   font-size: 16px;
   font-family: "Flame Sans";
@@ -3066,7 +3389,7 @@ div.form-wrapper form .form input {
   border-radius: 4px;
   border: 1px solid black;
 }
-div.form-wrapper form .form .textarea {
+div.delivery-form-wrapper form .form .textarea {
   resize: none;
   font-size: 16px;
   font-family: "Flame Sans";
@@ -3075,26 +3398,26 @@ div.form-wrapper form .form .textarea {
   border-radius: 4px;
   border: 1px solid black;
 }
-div.form-wrapper form .form .chexbox {
+div.delivery-form-wrapper form .form .chexbox {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-div.form-wrapper form .form .chexbox input {
+div.delivery-form-wrapper form .form .chexbox input {
   width: 20px;
   height: 20px;
 }
-div.form-wrapper form .form .chexbox span {
+div.delivery-form-wrapper form .form .chexbox span {
   font-size: 13px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-div.form-wrapper form .orders-wrapper .orders {
+div.delivery-form-wrapper form .orders-wrapper .orders {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-div.form-wrapper form .orders-wrapper .orders .order {
+div.delivery-form-wrapper form .orders-wrapper .orders .order {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -3102,37 +3425,37 @@ div.form-wrapper form .orders-wrapper .orders .order {
   border-radius: 10px;
   background-color: white;
 }
-div.form-wrapper form .orders-wrapper .orders .order .top span {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .top span {
   font-size: 24px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
   font-weight: bold;
 }
-div.form-wrapper form .orders-wrapper .orders .order .mid {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .mid {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-div.form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(1) {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(1) {
   font-size: 24px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
   font-weight: bold;
 }
-div.form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(2) {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .mid span:nth-child(2) {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .left a {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .left a {
   text-decoration: none;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .left button {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .left button {
   color: rgb(214, 35, 0);
   font-size: 14px;
   font-family: "Flame Sans";
@@ -3140,18 +3463,18 @@ div.form-wrapper form .orders-wrapper .orders .order .bottom .left button {
   background-color: transparent;
   border: none;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .right {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .right {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .right .decrement:disabled {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .right .decrement:disabled {
   background-color: #ccc;
   color: #666;
   cursor: not-allowed;
   opacity: 0.3;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .right button {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .right button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3165,13 +3488,13 @@ div.form-wrapper form .orders-wrapper .orders .order .bottom .right button {
   font-family: "Flame Sans";
   font-weight: bold;
 }
-div.form-wrapper form .orders-wrapper .orders .order .bottom .right span {
+div.delivery-form-wrapper form .orders-wrapper .orders .order .bottom .right span {
   color: rgb(214, 35, 0);
   font-size: 15px;
   font-family: "Flame Sans";
   font-weight: bold;
 }
-div.form-wrapper form .orders-wrapper a button {
+div.delivery-form-wrapper form .orders-wrapper a button {
   margin-top: 10px;
   padding: 5px;
   background-color: transparent;
@@ -3181,37 +3504,37 @@ div.form-wrapper form .orders-wrapper a button {
   font-weight: bold;
   border-radius: 40px;
 }
-div.form-wrapper form .taxs-wrapper .taxs {
+div.delivery-form-wrapper form .taxs-wrapper .taxs {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-div.form-wrapper form .taxs-wrapper .taxs div {
+div.delivery-form-wrapper form .taxs-wrapper .taxs div {
   display: flex;
   justify-content: space-between;
 }
-div.form-wrapper form .taxs-wrapper .taxs div span {
+div.delivery-form-wrapper form .taxs-wrapper .taxs div span {
   font-size: 16px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
 }
-div.form-wrapper form .taxs-wrapper .taxs div.total-tax {
+div.delivery-form-wrapper form .taxs-wrapper .taxs div.total-tax {
   margin-top: 5px;
   padding-top: 15px;
   border-top: 1px solid rgb(80, 35, 20);
 }
-div.form-wrapper form .taxs-wrapper .taxs div.total-tax span {
+div.delivery-form-wrapper form .taxs-wrapper .taxs div.total-tax span {
   font-size: 18px;
   font-family: "Flame Sans";
   color: rgb(80, 35, 20);
   font-weight: bold;
 }
-div.form-wrapper form div.submit-wrapper {
+div.delivery-form-wrapper form div.submit-wrapper {
   display: flex;
   justify-content: center;
 }
-div.form-wrapper form div.submit-wrapper input.submit-btn {
+div.delivery-form-wrapper form div.submit-wrapper input.submit-btn {
   width: 300px;
   text-align: center;
   padding: 10px;
@@ -3353,4 +3676,404 @@ form.payment div.total-price span {
   color: rgb(80, 35, 20);
   font-family: "Flame Sans";
   font-weight: bold;
+}
+
+div.menu-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  div.menu-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  div.menu-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+div.menu-wrapper .menus {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+div.menu-wrapper .menus .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+div.menu-wrapper .menus .menu span {
+  font-size: 15px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+div.menu-wrapper .menus .menu img {
+  width: 20px;
+  height: 20px;
+}
+
+.offer-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .offer-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offer-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+.offer-wrapper h4 {
+  padding: 20px;
+  color: rgb(80, 35, 20);
+  font-size: 30px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.offer-wrapper .offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .offer-wrapper .offers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.offer-wrapper .offers .offer a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  gap: 20px;
+  padding: 10px 20px 10px 20px;
+}
+.offer-wrapper .offers .offer a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in-out;
+}
+.offer-wrapper .offers .offer a .left {
+  height: 80px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer-wrapper .offers .offer a .left img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.offer-wrapper .offers .offer a .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.offer-wrapper .offers .offer a .right span.name {
+  color: rgb(80, 35, 20);
+  font-size: 25px;
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.offer-wrapper .offers .offer a .right .prices {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.offer-wrapper .offers .offer a .right .prices span {
+  color: rgb(80, 35, 20);
+  font-size: 20px;
+  font-family: "Flame Sans";
+}
+.offer-wrapper .offers .offer a .right .prices span.offer {
+  color: red;
+  font-size: 20px;
+  font-family: "Flame Sans";
+}
+.offer-wrapper .offers .offer a .right .prices span.old-price {
+  color: rgb(80, 35, 20);
+  font-size: 20px;
+  font-family: "Flame Sans";
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.account-wrapper {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1200px) {
+  .account-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .account-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .account-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .account-wrapper {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+  }
+}
+.account-wrapper .left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.account-wrapper .left .info-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: -moz-min-content;
+  width: min-content;
+}
+.account-wrapper .left .info-bar h4 {
+  font-size: 22px;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+.account-wrapper .left .info-bar .info {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+}
+.account-wrapper .left .info-bar .info span {
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(80, 35, 20);
+  font-family: "Flame Sans";
+}
+.account-wrapper .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.account-wrapper .right a {
+  text-decoration: none;
+}
+.account-wrapper .right a button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 12px;
+  background-color: rgb(214, 35, 0);
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: "Flame Sans";
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 40px;
+}
+
+.header-about {
+  background-color: rgb(80, 35, 20);
+}
+.header-about h4 {
+  font-size: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
+  text-align: center;
+  color: rgb(245, 235, 220);
+  font-family: "Flame Sans";
+  font-weight: bold;
+}
+
+.about-wrapper {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .about-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+.about-wrapper .top {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-wrapper .top h4 {
+  font-family: "Flame Sans";
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(80, 35, 20);
+}
+.about-wrapper .top span {
+  font-family: "Flame Sans";
+  font-size: 20px;
+  color: rgb(80, 35, 20);
+}
+.about-wrapper .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-wrapper .bottom h4 {
+  font-family: "Flame Sans";
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(80, 35, 20);
+}
+.about-wrapper .bottom h1 {
+  font-family: "Flame Sans";
+  font-size: 20px;
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+.about-wrapper .bottom span {
+  font-family: "Flame Sans";
+  font-size: 20px;
+  color: rgb(80, 35, 20);
+}
+
+.orders-wrapper {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .orders-wrapper {
+    width: 767px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .orders-wrapper {
+    width: 375px;
+    margin: auto;
+  }
+}
+.orders-wrapper .recent-orders {
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.orders-wrapper .recent-orders .order {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+}
+.orders-wrapper .recent-orders .order .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orders-wrapper .recent-orders .order .left img {
+  width: 180px;
+  height: 180px;
+}
+.orders-wrapper .recent-orders .order .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+.orders-wrapper .recent-orders .order .right .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .orders-wrapper .recent-orders .order .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.orders-wrapper .recent-orders .order .right .info .name {
+  font-size: 25px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+  font-weight: bold;
+}
+.orders-wrapper .recent-orders .order .right .info .price {
+  font-size: 25px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.orders-wrapper .recent-orders .order .right .info .calory {
+  font-size: 25px;
+  font-family: "Flame Sans";
+  color: rgb(80, 35, 20);
+}
+.orders-wrapper .recent-orders .order .right .order-btn a button {
+  width: 150px;
+  background-color: red;
+  font-size: 25px;
+  font-family: "Flame Sans";
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+}
+.orders-wrapper .recent-orders .order .right .order-btn a button:hover {
+  opacity: 0.5;
+  transition: 0.2S;
 }

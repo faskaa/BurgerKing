@@ -132,8 +132,77 @@
   }
 }
 
-.clicked{
-  display: none
+.clicked {
+  display: none;
+}
+
+
+.form-section {
+  margin-top: 30px;
+  form {
+    .form {
+      @include container();
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      h4 {
+        padding: 20px;
+        font-size: 20px;
+        font-family: "Flame Sans";
+        color: rgb(80, 35, 20);
+        font-weight: bold;
+      }
+
+      div.size {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        label {
+          padding: 20px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .infos{
+            display: flex;  
+
+
+            .info{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 10px;
+              span{
+                font-size: 15px;
+                font-family: "Flame Sans";
+                color: rgb(80, 35, 20);
+              }
+            }
+          }
+
+          input[type="radio"] {
+            margin-right: 5px;
+            cursor: pointer;
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgb(80, 35, 20);
+            border-radius: 50%;
+            background-color: white;
+
+            &:checked {
+              background-color: rgb(80, 35, 20);
+              border-color: rgb(80, 35, 20);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-selected-detail-order {
